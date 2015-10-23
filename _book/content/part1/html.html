@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Part I - The Client | Introduction</title>
+        <title>HTML | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../../content/part1/html.html" />
+    <link rel="next" href="../../content/part1/dev-tools.html" />
     
     
-    <link rel="prev" href="../../content/setup/chrome.html" />
+    <link rel="prev" href="../../content/part1/index.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="2" data-basepath="../.." data-revision="Thu Oct 22 2015 22:35:20 GMT-0700 (PDT)">
+    <div class="book" data-level="2.1" data-basepath="../.." data-revision="Thu Oct 22 2015 22:35:20 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -137,7 +137,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2" data-path="content/part1/index.html">
+        <li class="chapter " data-level="2" data-path="content/part1/index.html">
             
                 
                     <a href="../../content/part1/index.html">
@@ -153,7 +153,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="content/part1/html.html">
+        <li class="chapter active" data-level="2.1" data-path="content/part1/html.html">
             
                 
                     <a href="../../content/part1/html.html">
@@ -376,7 +376,71 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="part-i">Part I</h1>
+                        <h1 id="html">HTML</h1>
+<p>HTML is short for Hotmail. No, just kidding. It&apos;s actually short for Hyper Text Markup Language. It&apos;s a fancy way of saying that we use &quot;markup&quot; text/english to annotate and describe the structure of our web page content. It&apos;s the bread and butter of every web site you&apos;ve every visited.</p>
+<p>So let&apos;s use it to build our app.</p>
+<h2 id="step-1">Step 1</h2>
+<p>Create an new file in your project called <code>index.html</code> by right clicking the top level folder in the tree view on the left hand side.</p>
+<p><img src="http://d.pr/i/WClH/2cnEeYM7+" alt="example"></p>
+<p>Open the file and add the following html code into it:</p>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>CUEBC Chat App!<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    Hello world!
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>Save the file using <kbd>cmd</kbd> + <kbd>s</kbd> just like you would in any other text editor.</p>
+<p>With this file selected on the left side, click the green &quot;Run&quot; button. You&apos;ll see a terminal output like the one shown below. Copy the highlighted URL and paste it into a new browser tab.</p>
+<p><img src="http://d.pr/i/6Ffy/282MJmg1+" alt="example"></p>
+<p>Boom, you just built (your first?) HTML page!</p>
+<p>Notice the URL, you can even have your team member / pair programmer put that URL in their browser and see the same results. It&apos;s online too?! Thank you Cloud9!</p>
+<h2 id="step-2">Step 2</h2>
+<p>Let&apos;s build out the &quot;markup&quot; (structure) of our web page so it looks more like our goal, which is something like this:</p>
+<p><img src="http://d.pr/i/1k0TK/33fupKLm+" alt="example"></p>
+<p>Here&apos;s a general english description of the contents, do you agree?</p>
+<ol>
+<li>We have a main area (the main white rounded box) </li>
+<li>Inside that there is a message box</li>
+<li>Inside the message box is a vertical list of messages with zebra-striping (alternating background colours)</li>
+<li>Below that is a form containing two input fields and a Send button. The first input field is for two letter initials of who is sending the message and the second is the message itself.</li>
+</ol>
+<p>The initial HTML for this can be something like the following. Type out this code (please type it out, no copy / paste!) in between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> lines:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">main</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;main&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;messages&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;you&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">input</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;m&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">input</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>Send<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
+</code></pre>
+<p>Note a few important aspects to HTML here:</p>
+<h3 id="a-tags-define-elements">A. Tags define Elements</h3>
+<p>Tags that look like <code>&lt;this&gt;</code> have <em>meaning</em>. Other examples of tags would be <code>&lt;p&gt;</code> for a paragraph and <code>&lt;h1&gt;</code> for a &quot;Heading 1&quot;.</p>
+<p>They are closed by an accompanying closing tag (eg: <code>&lt;/p&gt;</code> or <code>&lt;/form&gt;</code>).</p>
+<h3 id="b-nesting">B. Nesting</h3>
+<p>We indent our code when that content is inside (within) some content so that it&apos;s easy on the eyes and we can understand what is going on. </p>
+<h3 id="c-ids">C. IDs</h3>
+<p>We <code>id</code> certain elements so that they can be quickly referenced later.</p>
+<p>This <code>id=&quot;some-identifier&quot;</code> key-value pair located <em>inside</em> an HTML tag is called an HTML attribute. Elements can have zero or more attributes. Attributes are cool and come in handy later (you&apos;ll see).</p>
+<h2 id="step-3">Step 3</h2>
+<p>Okay now let&apos;s save and refresh the other tab where the <code>index.html</code> file is open and being displayed to the user. It will hopefully look a lot like our final product...</p>
+<p><img src="http://d.pr/i/ZHBD/LlgXPLjH+" alt="example"></p>
+<p>Damnit! Not even close... sigh.</p>
+<p>What gives? Well the browser has a good understanding of the <em>content</em> of our webpage, but no idea about how to display it. The presentation rules are defined using another language, called CSS.</p>
+<blockquote>
+<p>Ugh, another language. Will it never end? </p>
+</blockquote>
+<p>Chin up soldier, this is fun!</p>
+<h2 id="questions">Questions?</h2>
+<p>If you have any questions about the above, flag me or another mentor so that we can answer any questions you may have.</p>
+<p>Otherwise, move on to the next section.</p>
 
                     
                     </section>
@@ -387,10 +451,10 @@
         </div>
 
         
-        <a href="../../content/setup/chrome.html" class="navigation navigation-prev " aria-label="Previous page: Chrome"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/part1/index.html" class="navigation navigation-prev " aria-label="Previous page: Part I - The Client"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/part1/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/part1/dev-tools.html" class="navigation navigation-next " aria-label="Next page: Dev Tools"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

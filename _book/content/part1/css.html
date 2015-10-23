@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Part I - The Client | Introduction</title>
+        <title>CSS | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../../content/part1/html.html" />
+    <link rel="next" href="../../content/part1/final-css.html" />
     
     
-    <link rel="prev" href="../../content/setup/chrome.html" />
+    <link rel="prev" href="../../content/part1/dev-tools.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="2" data-basepath="../.." data-revision="Thu Oct 22 2015 22:35:20 GMT-0700 (PDT)">
+    <div class="book" data-level="2.3" data-basepath="../.." data-revision="Thu Oct 22 2015 22:35:20 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -137,7 +137,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2" data-path="content/part1/index.html">
+        <li class="chapter " data-level="2" data-path="content/part1/index.html">
             
                 
                     <a href="../../content/part1/index.html">
@@ -183,7 +183,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="content/part1/css.html">
+        <li class="chapter active" data-level="2.3" data-path="content/part1/css.html">
             
                 
                     <a href="../../content/part1/css.html">
@@ -376,7 +376,63 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="part-i">Part I</h1>
+                        <h1 id="css">CSS</h1>
+<p>If HTML is the bread and butter of a web page, then CSS is our butter knife. Here&apos;s a picture of one, because, why not?</p>
+<p><img src="http://d.pr/i/1jmFc/2Ytr5fsx+" alt="screenshot"></p>
+<p>Credit: Google Images</p>
+<p>So why is CSS the knife? Well, it controls <em>what goes where</em>. </p>
+<p>More technically: CSS stands for Cascading Stylesheets, or something like that. The key word here is &quot;style&quot;, something us Vancouverites generally lack. JK JK!</p>
+<h2 id="step-1">Step 1</h2>
+<p>Let&apos;s prepare our HTML document to <em>link</em> a stylesheet (<code>.css</code>) file to it. </p>
+<p>Add the following HTML tag <em>inside</em> the <code>&lt;head&gt;</code> tag, ie right below/after the <code>&lt;title&gt;</code> element:</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/css&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span>&gt;</span>
+</code></pre>
+<p>This tells the browser to fetch another file from the web server and use it to styleize that page. </p>
+<h2 id="step-2">Step 2</h2>
+<p>Oops, we don&apos;t even have that file in our project, let&apos;s add it using this again:</p>
+<p><img src="http://d.pr/i/1gxkO/3zpwIs1q+" alt="screenshot"></p>
+<p>Call it <code>style.css</code></p>
+<h2 id="step-3">Step 3</h2>
+<p>Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).</p>
+<pre><code class="lang-css">* <span class="hljs-rules">{ 
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>; 
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>; 
+  <span class="hljs-rule"><span class="hljs-attribute">box-sizing</span>:<span class="hljs-value"> border-box</span></span>; 
+}</span>
+
+<span class="hljs-tag">body</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">&apos;Roboto Condensed&apos;</span>, sans-serif</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#244751</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> lightgray</span></span>;
+}</span>
+
+<span class="hljs-tag">main</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">450px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">20px</span> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> white</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid black</span></span>;
+}</span>
+</code></pre>
+<p>The first section with the <code>*</code> is about normalizing the style so that it&apos;s consistent across all browsers (each has their slightly different default styling). Don&apos;t worry about it too much, it&apos;s a bit of <em><a href="../../GLOSSARY.html#a_hack" class="glossary-term" title="A crappy solution to an annoying problem that shouldn&apos;t even be there in the first place, or something like that.">a hack</a></em>.</p>
+<h2 id="step-4">Step 4</h2>
+<p>I&apos;m actaully <em>not</em> going to explain to you what this code is doing and how it&apos;s working, actually. Discuss amongst yourself and try and use your powers of reasoning, critical thinking and experimentation to solve the mysteries of CSS syntax. Look for patterns to help identify conventions and rules. HTML has its own completely different set of rules than CSS, but all languages have rules, and computer languages need strict rules. Use this to your benefit to deduce certain conclusions.</p>
+<p>Also, feel free to google terms like <a href="https://google.com/?q=CSS+background+color" target="_blank">CSS background color</a> or even <a href="https://www.bing.com/search?q=&quot;developers+developers+developers&quot;" target="_blank">Please explain CSS bc Khurram won&apos;t!</a></p>
+<p>Also, the end result should look like something closer to what we&apos;re trying to get to, nice!</p>
+<h2 id="step-5-a-challenge">Step 5 - A challenge</h2>
+<p>Using the following set of CSS properties, try to make the page look closer to this:</p>
+<p><img src="http://d.pr/i/1k0TK/33fupKLm+" alt="final"></p>
+<p>Tip: add a few &quot;line items&quot; (eg: <code>&lt;li&gt;KV says: hello&lt;/li&gt;</code>) within the <code>&lt;ul&gt;</code> element so that you have some content to work with.</p>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><code>width</code></li>
+<li><code>background-color</code></li>
+<li><code>padding</code></li>
+<li><code>margin</code></li>
+<li><code>border</code></li>
+<li><code>font-size</code></li>
+</ul>
+<p>Feel free to google them up along with the keyword &quot;CSS&quot; to learn by example. StackOverflow, w3schools and MDN are all great resources that you&apos;ll likely end up on naturally. They tend to trend highest in results. </p>
+<p>BTW you&apos;ll likely need a few more CSS properties. Take your time :)</p>
 
                     
                     </section>
@@ -387,10 +443,10 @@
         </div>
 
         
-        <a href="../../content/setup/chrome.html" class="navigation navigation-prev " aria-label="Previous page: Chrome"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/part1/dev-tools.html" class="navigation navigation-prev " aria-label="Previous page: Dev Tools"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/part1/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/part1/final-css.html" class="navigation navigation-next " aria-label="Next page: CSS (Solution!)"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

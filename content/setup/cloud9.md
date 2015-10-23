@@ -6,4 +6,4 @@ Anyway, so what is Cloud9? I'm not surprised you're asking. There are many devs 
 
 Here's the thing... it takes a lot of time and effort to setup your computer for writing software. A whole bunch of libraries and tools to install, and it's especially hard to make sure every developer on the same team has the exact same versions for all the dependencies.
 
-This is big hurdle especially when getting started with code. Cloud9 gives us a pre-configured machine in the cloud as well as a really slick IDE right in the browser. As long as you have internet, you can immediately start coding like a real developer. 
+This is big hurdle especially when getting started with code. Cloud9 gives us a pre-configured machine in the cloud as well as a really slick IDE right in the browser. As long as you have internet, you can immediately start coding like a _Real Developer_&trade;.
