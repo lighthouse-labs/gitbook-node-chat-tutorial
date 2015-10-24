@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="3.1" data-basepath="../.." data-revision="Fri Oct 23 2015 20:36:59 GMT-0700 (PDT)">
+    <div class="book" data-level="3.1" data-basepath="../.." data-revision="Fri Oct 23 2015 21:17:27 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -392,7 +392,7 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="javascript-in-the-browser">JavaScript in the Browser</h1>
-<p>Let&apos;s add some behavior to your page so it works. That&apos;s where JavaScript or JS comes in.</p>
+<p>Let&apos;s add some behavior to your web page so it works. That&apos;s where JavaScript (JS) comes in.</p>
 <h2 id="step-1">Step 1</h2>
 <p>Much like with the CSS, we need to link our new <code>.js</code> code with our web page, our <code>.html</code> content file.</p>
 <p>Add the following HTML tag <em>inside</em> the <code>&lt;body&gt;</code> element but right before it&apos;s closed off with <code>&lt;/body&gt;</code>. It&apos;s not necessary but considered best practice to reference all the JS at the end of the page.</p>
@@ -405,7 +405,33 @@
 <p>It will be empty at first, but let&apos;s add the following code into it:</p>
 <pre><code class="lang-js">alert(<span class="hljs-string">&apos;hello from the JS file&apos;</span>);
 </code></pre>
-<p>Save the file and refresh the (probably already running) html file in your other browser tab. Upon page load, you should see </p>
+<p>Save the file and refresh the (probably already running) html file in your other browser tab. Upon page load, you should see an alert pop up that says your message:</p>
+<p><img src="http://d.pr/i/1iOIM/1t9ilpa9+" alt="screenshot"></p>
+<p><code>alert</code> is a built in function that all browsers support, even though they may look slightly different on each browser. I&apos;m guessing it&apos;s not your first time seeing one, so now you know how they happen.</p>
+<p>Any time you call a function in JS you have to use <code>(parenthesis)</code> after it, and within the brackets you put in data that you want to give the function. Programming functions are much like math functions. They take in values and can do some crunching and give you back a computed value, or in this case, give you back some behavior like popup that message you passed into it.</p>
+<p>Every single pre-defined JS function has documentation, so we can look up details about how they work. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">Case in point</a>.</p>
+<p>Very soon, we&apos;ll create our own function while using other functions. It&apos;s going to get a bit more real, so hold on to your suspenders!</p>
+<h2 id="step-3">Step 3</h2>
+<p>Remove the <code>alert</code> code and let&apos;s get down to business. We want to make it so when our <code>&lt;form&gt;</code> is submitted (via enter key or by clicking the send button), we read the text content in the 2 input fields (<code>id</code>&apos;d as <code>m</code> and <code>you</code> in the HTML file) and do something with it, for now let&apos;s just <code>alert</code> it.</p>
+<pre><code class="lang-js">$(<span class="hljs-string">&apos;form&apos;</span>).submit(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> text = $(<span class="hljs-string">&apos;#m&apos;</span>).val();
+  alert(text);
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+});
+</code></pre>
+<p>Remember, type that out yourself, don&apos;t copy paste it. Assuming you started and closed all the brackets, quotes, semicolons, etc correctly, it should add some interesting behavior to the page. </p>
+<p>Save the file, and refresh the html page. Put in some text into the second field and hit enter or click Send. You should see it echoed back to you in an alert message. If not, review or otherwise seek help ;)</p>
+<p><img src="http://d.pr/i/1dJ6W/mKRvFgKR+" alt="example"></p>
+<h3 id="explanation">Explanation</h3>
+<p>The code above isn&apos;t doing too much, but it does need to be reviewed before we move on, don&apos;t ya think?</p>
+<p>First, we use <code>jQuery</code> using the <code>$</code> function, telling it that we want to target all <code>form</code> elements on the page. There is only one form element on the page and it is the one at the bottom which contains both input fields and the button.</p>
+<p>BTW note how we don&apos;t use the <code>&lt;</code>angle<code>&gt;</code> brackets when targetting elements here, just like with CSS. Angle brackets are solely used to <em>define</em> tags in the html page.</p>
+<p>Anyway, we then call/invoke another function called <code>submit</code> on that returned form element, saying that we want to be notified anytime that form is submitted.</p>
+<p>In order to be notified any time this happens, we pass in our own custom function into the <code>submit</code> function. That&apos;s right, <code>submit</code> is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the <code>(</code>parenthesis<code>)</code>. They&apos;re not on the same line, but they are there.</p>
+<p>This part may be a bit confused, so call over a mentor if you need.</p>
+<p>Inside our function, the rest of the code is indented so that we know that it is within that function, just like we nest html tags with indentation (make sure your code is indented correctly because improper indentation is a big source of confusion).</p>
+<p>This inside code is capturing the text value of the html element <code>id</code>&apos;d as <code>m</code> and then passing it to <code>alert</code> so that we can see it. Tres cool.</p>
+<p>The <code>return false</code> is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.</p>
 
                     
                     </section>
