@@ -6,7 +6,7 @@ If HTML is the bread and butter of a web page, then CSS is our butter knife. Her
 
 Credit: Google Images
 
-So why is CSS the knife? Well, it controls _what goes where_. 
+So why is CSS the knife? Well, it controls _what goes where_. Using CSS we declare how we'd like the content (HTML) to be presented.
 
 More technically: CSS stands for Cascading Stylesheets, or something like that. The key word here is "style", something us Vancouverites generally lack. JK JK!
 
@@ -20,7 +20,7 @@ Add the following HTML tag _inside_ the `<head>` tag, ie right below/after the `
   <link rel="stylesheet" type="text/css" href="style.css">
 ```
 
-This tells the browser to fetch another file from the web server and use it to styleize that page. 
+Now whenever this HTML file is loaded again, it will ask the browser to fetch another file (called `style.css`) from our web server and apply it to our HTML page. 
 
 ## Step 2
 
@@ -28,11 +28,13 @@ Oops, we don't even have that file in our project, let's add it using this again
 
 ![screenshot](http://d.pr/i/1gxkO/3zpwIs1q+)
 
-Call it `style.css`
+Call it `style.css`.
 
 ## Step 3
 
 Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).
+
+Note: if no changes are reflected in the document (upon refreshing the page) then please confirm that your `<link>` tag is correct. Still a problem? Ask for help from your peers or a mentor.
 
 ```css
 * { 
@@ -71,7 +73,7 @@ Using the following set of CSS properties, try to make the page look closer to t
 
 ![final](http://d.pr/i/1k0TK/33fupKLm+)
 
-Tip: add a few "line items" (eg: `<li>KV says: hello</li>`) within the `<ul>` element so that you have some content to work with.
+First, add a few "line items" (eg: `<li>KV says: hello</li>`) within the `<ul>` element so that you have some content to work with.
 
 ### Properties
 

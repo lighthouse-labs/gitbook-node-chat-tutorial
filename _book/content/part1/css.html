@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="2.3" data-basepath="../.." data-revision="Thu Oct 22 2015 22:35:20 GMT-0700 (PDT)">
+    <div class="book" data-level="2.3" data-basepath="../.." data-revision="Fri Oct 23 2015 20:36:59 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -146,7 +146,7 @@
                         
                             <b>2.</b>
                         
-                        Part I - The Client
+                        Part I - HTML &amp; CSS
                     </a>
             
             
@@ -227,23 +227,38 @@
                         
                             <b>3.</b>
                         
-                        Part II - The Server
+                        Part II - JavaScript
                     </a>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1" data-path="content/part2/node.html">
+        <li class="chapter " data-level="3.1" data-path="content/part2/client-js.html">
             
-            <span><b>3.1.</b> Node &amp; Express</span>
+                
+                    <a href="../../content/part2/client-js.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Client Side
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="content/part2/sockets.html">
+        <li class="chapter " data-level="3.2" data-path="content/part2/node.html">
             
-            <span><b>3.2.</b> Sockets</span>
+            <span><b>3.2.</b> Node &amp; Express</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="content/part2/sockets.html">
+            
+            <span><b>3.3.</b> Sockets</span>
             
             
         </li>
@@ -380,20 +395,21 @@
 <p>If HTML is the bread and butter of a web page, then CSS is our butter knife. Here&apos;s a picture of one, because, why not?</p>
 <p><img src="http://d.pr/i/1jmFc/2Ytr5fsx+" alt="screenshot"></p>
 <p>Credit: Google Images</p>
-<p>So why is CSS the knife? Well, it controls <em>what goes where</em>. </p>
+<p>So why is CSS the knife? Well, it controls <em>what goes where</em>. Using CSS we declare how we&apos;d like the content (HTML) to be presented.</p>
 <p>More technically: CSS stands for Cascading Stylesheets, or something like that. The key word here is &quot;style&quot;, something us Vancouverites generally lack. JK JK!</p>
 <h2 id="step-1">Step 1</h2>
 <p>Let&apos;s prepare our HTML document to <em>link</em> a stylesheet (<code>.css</code>) file to it. </p>
 <p>Add the following HTML tag <em>inside</em> the <code>&lt;head&gt;</code> tag, ie right below/after the <code>&lt;title&gt;</code> element:</p>
 <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/css&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span>&gt;</span>
 </code></pre>
-<p>This tells the browser to fetch another file from the web server and use it to styleize that page. </p>
+<p>Now whenever this HTML file is loaded again, it will ask the browser to fetch another file (called <code>style.css</code>) from our web server and apply it to our HTML page. </p>
 <h2 id="step-2">Step 2</h2>
 <p>Oops, we don&apos;t even have that file in our project, let&apos;s add it using this again:</p>
 <p><img src="http://d.pr/i/1gxkO/3zpwIs1q+" alt="screenshot"></p>
-<p>Call it <code>style.css</code></p>
+<p>Call it <code>style.css</code>.</p>
 <h2 id="step-3">Step 3</h2>
 <p>Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).</p>
+<p>Note: if no changes are reflected in the document (upon refreshing the page) then please confirm that your <code>&lt;link&gt;</code> tag is correct. Still a problem? Ask for help from your peers or a mentor.</p>
 <pre><code class="lang-css">* <span class="hljs-rules">{ 
   <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>; 
   <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>; 
@@ -421,7 +437,7 @@
 <h2 id="step-5-a-challenge">Step 5 - A challenge</h2>
 <p>Using the following set of CSS properties, try to make the page look closer to this:</p>
 <p><img src="http://d.pr/i/1k0TK/33fupKLm+" alt="final"></p>
-<p>Tip: add a few &quot;line items&quot; (eg: <code>&lt;li&gt;KV says: hello&lt;/li&gt;</code>) within the <code>&lt;ul&gt;</code> element so that you have some content to work with.</p>
+<p>First, add a few &quot;line items&quot; (eg: <code>&lt;li&gt;KV says: hello&lt;/li&gt;</code>) within the <code>&lt;ul&gt;</code> element so that you have some content to work with.</p>
 <h3 id="properties">Properties</h3>
 <ul>
 <li><code>width</code></li>
@@ -453,6 +469,10 @@
 
         
 <script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
 
 <script>
 require(["gitbook"], function(gitbook) {
