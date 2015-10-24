@@ -4,7 +4,7 @@ So far we've created a node script that prints something out to the terminal, wh
 
 In our case, we're building a web server, more specifically a _chat 'server'_. So we need to listen for incoming HTTP requests and then send down the HTML, CSS and JS that we wrote earlier for our _chat 'client'_.
 
-While Node comes with basic HTTP handling support, a very (probably the most) popular 3rd party library (called "modules" in the Node community) named 'Express'. 
+While Node comes with basic HTTP handling support, a very (probably the most) popular 3rd party library (called "modules" in the Node community) named 'Express' is used by most developers writing web servers in Node. We shall use it too!
 
 ## DYK!!
 
@@ -22,11 +22,26 @@ His code has made its way into a very very large number of software products tha
 
 Okay, so back to business.
 
-Let's install and save express into our project by running the command: `npm install express --save`
+Let's install and save the Express library into our project by running the command: `npm install express --save`
 
 ![screenshot](http://d.pr/i/10kgL/2BlmzYbb+)
 
+Now we can start using it. Type out the following JavaScript code into the `server.js` file:
 
+```js
+var express = require('express');
+var app = express();
+
+var http = require('http');
+var server = http.Server(app);
+
+app.use(express.static('client'));
+
+server.listen(process.env.PORT, process.env.IP, function() {
+  var addr = server.address();
+  console.log("Chat server running at", addr.address + ":" + addr.port);
+});
+```
 
 
 
