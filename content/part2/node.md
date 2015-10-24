@@ -20,6 +20,8 @@ Switch focus to the "bash" command line terminal tab/window at the bottom by cli
 
 ![screenshot](http://d.pr/i/ljXa/2V9uS9Ub+)
 
+NPM by the way is a package manager for Node (Node Package Manager). It will be used later to install other packages into our app. 
+
 ## Step 3
 
 Now let's add another javascript file to be run on the server side which will power the logic for our chat application. Call it `server.js` and put it at the top level (at the same level as the `client` folder):

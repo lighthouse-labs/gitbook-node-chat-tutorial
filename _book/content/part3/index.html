@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Node | Introduction</title>
+        <title>Part III - Enhancements (Optional) | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../../content/part2/express.html" />
+    <link rel="next" href="../../content/final/index.html" />
     
     
-    <link rel="prev" href="../../content/part2/client-js.html" />
+    <link rel="prev" href="../../content/part2/socket.io.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="3.2" data-basepath="../.." data-revision="Fri Oct 23 2015 23:12:36 GMT-0700 (PDT)">
+    <div class="book" data-level="4" data-basepath="../.." data-revision="Fri Oct 23 2015 23:12:36 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -249,7 +249,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.2" data-path="content/part2/node.html">
+        <li class="chapter " data-level="3.2" data-path="content/part2/node.html">
             
                 
                     <a href="../../content/part2/node.html">
@@ -299,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4" data-path="content/part3/index.html">
+        <li class="chapter active" data-level="4" data-path="content/part3/index.html">
             
                 
                     <a href="../../content/part3/index.html">
@@ -437,33 +437,13 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="node-javascript-on-the-server">Node (JavaScript on the server)!</h1>
-<p>So far we&apos;ve been building a web site with some static content and a bit of client-side interactivity.</p>
-<p>It&apos;s time to take it up a notch and graduate to &quot;web application&quot; status. Server side app logic is what separates a site from an app.</p>
-<h2 id="step-1">Step 1</h2>
-<p>First, stop the server if it&apos;s running:</p>
-<p><img src="http://d.pr/i/18zDg/2QUFHpkd+" alt="screenshot"></p>
-<p>Let&apos;s then move all the &quot;client&quot; side files into their own folder called ... <code>client</code>.</p>
-<p><img src="http://d.pr/i/1jj5s/2uE8HilK+" alt="screenshot"></p>
-<h2 id="step-2">Step 2</h2>
-<p>Switch focus to the &quot;bash&quot; command line terminal tab/window at the bottom by clicking on its tab, and initialize the project as a node application, by typing in <code>npm init -y</code>:</p>
-<p><img src="http://d.pr/i/ljXa/2V9uS9Ub+" alt="screenshot"></p>
-<p>NPM by the way is a package manager for Node (Node Package Manager). It will be used later to install other packages into our app. </p>
-<h2 id="step-3">Step 3</h2>
-<p>Now let&apos;s add another javascript file to be run on the server side which will power the logic for our chat application. Call it <code>server.js</code> and put it at the top level (at the same level as the <code>client</code> folder):</p>
-<p>In it, put this one test line of code, to log (aka output) a message to the screen, so we know that it is working:</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello from our node script!&apos;</span>);
-</code></pre>
-<p><img src="http://d.pr/i/1j4Jg/2F7WTbb6+" alt="screenshot"></p>
-<h2 id="step-4">Step 4</h2>
-<p>Let&apos;s run this bad boy. We&apos;ll use the Node runner given to us by Cloud9 to make life easy here:</p>
-<p><img src="http://d.pr/i/17Sx1/58mf36Nc+" alt="screenshot"></p>
-<p>A new tab will open in the terminal panel at the bottom, which will say something very similar to:</p>
-<pre><code class="lang-bash">Debugger listening on port <span class="hljs-number">15454</span>
-hello from our node script!
-</code></pre>
-<p>And there&apos;s our message, nice!</p>
-<p>You can click the red Stop button at this point.</p>
+                        <h1 id="enhancements">Enhancements</h1>
+<p>You may have noticed some bugs and broken features with this app:</p>
+<h2 id="1-name-field">1. Name field</h2>
+<p>The name field (the first input box) is not being used at all. Modify the <code>app.js</code> so that it sends (emits) the text as something like <code>&quot;KV says: hello&quot;</code> where <code>&quot;KV&quot;</code> is from the first input field (with<code>id=&quot;you&quot;</code>) and <code>&quot;hello&quot;</code> is from the message field.</p>
+<h2 id="2-initial-field">2. Initial field</h2>
+<p>The name field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be added on. </p>
+<p>Hint: google &quot;html input field maximum length&quot; for a convenient HTML attribute that can be added to yout HTML file.</p>
 
                     
                     </section>
@@ -474,10 +454,10 @@ hello from our node script!
         </div>
 
         
-        <a href="../../content/part2/client-js.html" class="navigation navigation-prev " aria-label="Previous page: Client Side"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/part2/socket.io.html" class="navigation navigation-prev " aria-label="Previous page: Socket IO"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/part2/express.html" class="navigation navigation-next " aria-label="Next page: Express"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/final/index.html" class="navigation navigation-next " aria-label="Next page: Final Thoughts"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
