@@ -36,7 +36,7 @@ console.log('hello from our node script!');
 
 Let's run this bad boy. We'll use the Node runner given to us by Cloud9 to make life easy here:
 
-![screenshot](http://d.pr/i/17Sx1/58mf36Nc)
+![screenshot](http://d.pr/i/17Sx1/58mf36Nc+)
 
 A new tab will open in the terminal panel at the bottom, which will say something very similar to:
 
@@ -47,3 +47,4 @@ hello from our node script!
 
 And there's our message, nice!
 
+You can click the red Stop button at this point.

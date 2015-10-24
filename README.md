@@ -19,8 +19,8 @@ Okay so here's what our day today will _kind of_ look like:
 * **10:00AM - 11:00AM:** Talk about HTTP, Cloud9, HTML & CSS
 * **11:00AM - 12:00PM:** Breakout & Build (in pairs) - Part I
 * **12:00PM - 01:00PM:** Working Lunch + Talk about JavaScript
-* **01:00PM - 02:00PM:** Breakout & Build (in pairs) - Part II
-* **02:00PM - 03:00PM:** Closing Talk
+* **01:00PM - 02:30PM:** Breakout & Build (in pairs) - Part II
+* **02:30PM - 03:00PM:** Closing Talk
 
 ## Pair Programming
 
