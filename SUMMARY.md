@@ -13,6 +13,7 @@ This is the summary of my book.
     * [CSS (Solution!)](content/part1/final-css.md)
 * [Part II - JavaScript](content/part2/README.md)
     * [Client Side](content/part2/client-js.md)
-    * [Node & Express](content/part2/node.md)
+    * [Node](content/part2/node.md)
+    * [Express](content/part2/express.md)
     * [Sockets](content/part2/sockets.md)
 * [Final Thoughts](content/final/README.md)

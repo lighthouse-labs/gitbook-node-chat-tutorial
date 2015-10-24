@@ -67,14 +67,17 @@ Anyway, we then call/invoke another function called `submit` on that returned fo
 
 In order to be notified any time this happens, we pass in our own custom function into the `submit` function. That's right, `submit` is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the `(`parenthesis`)`. They're not on the same line, but they are there.
 
-This part may be a bit confused, so call over a mentor if you need.
+This part may be a bit confusing but perhaps this annotated code helps you see it better?
+
+![screenshot](http://d.pr/i/1eAYn/2mERR8ql+)
+
+Otherwise, call over a mentor for explanation you must.
 
 Inside our function, the rest of the code is indented so that we know that it is within that function, just like we nest html tags with indentation (make sure your code is indented correctly because improper indentation is a big source of confusion).
 
 This inside code is capturing the text value of the html element `id`'d as `m` and then passing it to `alert` so that we can see it. Tres cool.
 
-The `return false` is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.
-
+Lastly, the `return false` is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.
 
 
 

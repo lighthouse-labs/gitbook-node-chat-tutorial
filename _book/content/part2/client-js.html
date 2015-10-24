@@ -29,7 +29,7 @@
         
     
     
-    <link rel="next" href="../../content/final/index.html" />
+    <link rel="next" href="../../content/part2/node.html" />
     
     
     <link rel="prev" href="../../content/part2/index.html" />
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="3.1" data-basepath="../.." data-revision="Fri Oct 23 2015 21:17:27 GMT-0700 (PDT)">
+    <div class="book" data-level="3.1" data-basepath="../.." data-revision="Fri Oct 23 2015 21:49:07 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -251,14 +251,37 @@
     
         <li class="chapter " data-level="3.2" data-path="content/part2/node.html">
             
-            <span><b>3.2.</b> Node &amp; Express</span>
+                
+                    <a href="../../content/part2/node.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Node
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="content/part2/sockets.html">
+        <li class="chapter " data-level="3.3" data-path="content/part2/express.html">
             
-            <span><b>3.3.</b> Sockets</span>
+                
+                    <a href="../../content/part2/express.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Express
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="content/part2/sockets.html">
+            
+            <span><b>3.4.</b> Sockets</span>
             
             
         </li>
@@ -428,10 +451,12 @@
 <p>BTW note how we don&apos;t use the <code>&lt;</code>angle<code>&gt;</code> brackets when targetting elements here, just like with CSS. Angle brackets are solely used to <em>define</em> tags in the html page.</p>
 <p>Anyway, we then call/invoke another function called <code>submit</code> on that returned form element, saying that we want to be notified anytime that form is submitted.</p>
 <p>In order to be notified any time this happens, we pass in our own custom function into the <code>submit</code> function. That&apos;s right, <code>submit</code> is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the <code>(</code>parenthesis<code>)</code>. They&apos;re not on the same line, but they are there.</p>
-<p>This part may be a bit confused, so call over a mentor if you need.</p>
+<p>This part may be a bit confusing but perhaps this annotated code helps you see it better?</p>
+<p><img src="http://d.pr/i/1eAYn/2mERR8ql+" alt="screenshot"></p>
+<p>Otherwise, call over a mentor for explanation you must.</p>
 <p>Inside our function, the rest of the code is indented so that we know that it is within that function, just like we nest html tags with indentation (make sure your code is indented correctly because improper indentation is a big source of confusion).</p>
 <p>This inside code is capturing the text value of the html element <code>id</code>&apos;d as <code>m</code> and then passing it to <code>alert</code> so that we can see it. Tres cool.</p>
-<p>The <code>return false</code> is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.</p>
+<p>Lastly, the <code>return false</code> is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.</p>
 
                     
                     </section>
@@ -445,7 +470,7 @@
         <a href="../../content/part2/index.html" class="navigation navigation-prev " aria-label="Previous page: Part II - JavaScript"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/final/index.html" class="navigation navigation-next " aria-label="Next page: Final Thoughts"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/part2/node.html" class="navigation navigation-next " aria-label="Next page: Node"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
