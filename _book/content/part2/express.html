@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="3.3" data-basepath="../.." data-revision="Fri Oct 23 2015 22:16:26 GMT-0700 (PDT)">
+    <div class="book" data-level="3.3" data-basepath="../.." data-revision="Fri Oct 23 2015 22:26:46 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -442,6 +442,15 @@ server.listen(process.env.PORT, process.env.IP, <span class="hljs-function"><spa
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Chat server running at&quot;</span>, addr.address + <span class="hljs-string">&quot;:&quot;</span> + addr.port);
 });
 </code></pre>
+<h3 id="explanation">Explanation</h3>
+<p>So a bunch of new code and syntax was just introduced there. Let&apos;s attempt to break it down.</p>
+<p>The first few lines are just loading external modules. We then tell the Express app to server all static content from the <code>&apos;client&apos;</code> folder.</p>
+<p>When all the setup work is done, we then tell the server to listen in on a certain port and IP address.</p>
+<p>So for now it&apos;s a simple web server serving only static (HTML, CSS and JS) files to any HTTP/web traffic coming its way. </p>
+<p>Let&apos;s try it out by running it:</p>
+<p><img src="http://d.pr/i/1bz8V/4HQ3G3lz+" alt="screenshot"></p>
+<p>Now visit the URL mentioned in the terminal output in another browser tab. It will bring up the chat app page just like before, with no new functionality. The send button should be working as before, too!</p>
+<p><img src="http://d.pr/i/23w5/1oxxdqvJ+" alt="screenshot"></p>
 
                     
                     </section>

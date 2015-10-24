@@ -43,7 +43,22 @@ server.listen(process.env.PORT, process.env.IP, function() {
 });
 ```
 
+### Explanation
 
+So a bunch of new code and syntax was just introduced there. Let's attempt to break it down.
 
+The first few lines are just loading external modules. We then tell the Express app to server all static content from the `'client'` folder.
+
+When all the setup work is done, we then tell the server to listen in on a certain port and IP address.
+
+So for now it's a simple web server serving only static (HTML, CSS and JS) files to any HTTP/web traffic coming its way. 
+
+Let's try it out by running it:
+
+![screenshot](http://d.pr/i/1bz8V/4HQ3G3lz+)
+
+Now visit the URL mentioned in the terminal output in another browser tab. It will bring up the chat app page just like before, with no new functionality. The send button should be working as before, too!
+
+![screenshot](http://d.pr/i/23w5/1oxxdqvJ+)
 
 
