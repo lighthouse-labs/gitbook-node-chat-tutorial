@@ -1,6 +1,6 @@
 # Example CSS
 
-There there is "one right solution" to CSS. There are many approaches to solving the same thing (admittedly in some cases there are some better than others) not to mention all the creative freedom you get with it.
+There is no "one right solution" to CSS. There are many approaches to solving the same thing (admittedly in some cases there are some better than others) not to mention all the creative freedom you get with it.
 
 That said, if you are looking for one possible CSS file so that you can move on, scroll on down! ...
 
