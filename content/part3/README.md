@@ -1,4 +1,4 @@
-# Enhancements
+# Enhancements as Challenges (Optional)
 
 You may have noticed some bugs and broken features with this app:
 

@@ -26,6 +26,20 @@ Okay so here's what our day today will _kind of_ look like:
 
 You're encouraged to buddy up with one other person. That said, both of you should ideally do the setup work individually on your own laptops. 
 
-## Okay, let's get started!
+## The Goal
 
-You may be tempted to start hacking away at code, but you can wait until 11AM until after the initial talk, can't you? please?
+Today's goal is to get acquainted with JavaScript-based web programming by creating a simple chat application. We'll use modern tools and languages (Cloud9, NodeJS, jQuery, etc.) and touch upon many different aspects. 
+
+The objective is not to _fully_ understand every line of code (though that would be nice), but rather understand the server-client architecture and more importantly to be inspired by how much can be created with such little code these days.
+
+## The Product
+
+The finished app that we'll be building in just a few hours today will look and feel much like this:
+
+![example](http://d.pr/i/1k0TK/33fupKLm+)
+
+Cool, eh?
+
+## Okay, so let's get started!
+
+You may be tempted to start hacking away at code, but you can wait until 11AM, ie after the initial talk, can't you? please? #kthxbye
