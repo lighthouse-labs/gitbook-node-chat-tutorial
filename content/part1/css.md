@@ -65,23 +65,28 @@ I'm actaully _not_ going to explain to you what this code is doing and how it's 
 
 Also, feel free to google terms like [CSS background color](https://google.com/?q=CSS+background+color) or even [Please explain CSS bc Khurram won't!](https://www.bing.com/search?q="developers+developers+developers")
 
-Also, the end result should look like something closer to what we're trying to get to, nice!
+Also, the end result should look like something a bit closer to what we're trying to get to.
 
 ## Step 5 - A challenge
 
-Using the following set of CSS properties, try to make the page look closer to this:
+First, add a few "line items" (eg: `<li>KV says: hello</li>`) within the `<ul>` element so that you have some fake/mock messages that can be styled with. Add at least four of these (We can remove them later when the app comes alive).
+
+Now use CSS to try and make the page look closer to this:
 
 ![final](http://d.pr/i/1k0TK/33fupKLm+)
 
-First, add a few "line items" (eg: `<li>KV says: hello</li>`) within the `<ul>` element so that you have some content to work with.
+If you have time to spare, give it your own unique look. 
 
 ### Properties
+
+Here is a list of CSS properties that you'll want to leverage, 
 
 * `width`
 * `background-color`
 * `padding`
 * `margin`
 * `border`
+* `border-radius`
 * `font-size`
 
 Feel free to google them up along with the keyword "CSS" to learn by example. StackOverflow, w3schools and MDN are all great resources that you'll likely end up on naturally. They tend to trend highest in results. 

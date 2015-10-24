@@ -12,5 +12,10 @@ The name field is actually meant to be 2 letter initials only. Make it so only a
 
 Hint: google "html input field maximum length" for a convenient HTML attribute that can be added to yout HTML file.
 
+## 3. List of Messages
 
+It would be nice to see the message history on the server anytime you join the chat room. Unfortunately, we don't keep/store a message history on the server at all. 
 
+One way to do this is to create an empty [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) that stores the messages. 
+
+Then, whenever a message is received on the server, it can [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) (append) that message string into the array

@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="4" data-basepath="../.." data-revision="Sat Oct 24 2015 08:16:08 GMT-0700 (PDT)">
+    <div class="book" data-level="4" data-basepath="../.." data-revision="Sat Oct 24 2015 08:25:35 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -444,6 +444,10 @@
 <h2 id="2-initial-field">2. Initial field</h2>
 <p>The name field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.</p>
 <p>Hint: google &quot;html input field maximum length&quot; for a convenient HTML attribute that can be added to yout HTML file.</p>
+<h2 id="3-list-of-messages">3. List of Messages</h2>
+<p>It would be nice to see the message history on the server anytime you join the chat room. Unfortunately, we don&apos;t keep/store a message history on the server at all. </p>
+<p>One way to do this is to create an empty <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">array</a> that stores the messages. </p>
+<p>Then, whenever a message is received on the server, it can <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">push</a> (append) that message string into the array</p>
 
                     
                     </section>
