@@ -4,12 +4,14 @@ This demonstration was a bold attempt at showing you how easy it is to get start
 
 ## Feedback
 
-This was my first time attempting this format, content and approach. This whole thing was especially crafted for today and I would love a quick anonymous feedback from you about your experience so I know how to improve it for the future.
+This was my first time attempting this format, content and approach. This whole thing was especially crafted for today and I would love some quick constructive feedback in this survey from you about your experience so I know how to improve it for the future.
 
-Please visit the link below and fill out the survey.
-
-(-- http://goo.gl/forms/N5eOkhQF17 --)
+**[GIVE FEEDBACK](http://goo.gl/forms/N5eOkhQF17)**
 
 ## Thank you!
 
-Enjoy your half-weekend ;)
+Please enjoy this complimentary pic of a gorgeous Lighthouse as a parting gift!
+
+![Lighthouse](https://drscdn.500px.org/photo/76052917/m%3D2048/84a554816328aa3d604dc8bc0549678f)
+
+Thank you for spending your Saturday with us; I hope you enjoyed it and that you have wonderful remaining weekend!
