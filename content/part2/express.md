@@ -10,7 +10,7 @@ While Node comes with basic HTTP handling support, a very (probably the most) po
 
 **That reminds me!** Since you've made it to this point, I guess you deserve a really juicy bit of DYK (did you know).
 
-A very large part of the NodeJS ecosystem / codebase was actually written by a young fellow by then name of TJ Holowaychuk. He lives in Victoria, BC. 
+A very large part of the NodeJS ecosystem / codebase was actually written by a young fellow by the name of TJ Holowaychuk. He lives in Victoria, BC. 
 
 ![TJ](http://d.pr/i/1azN5/16iw08fD+)
 
