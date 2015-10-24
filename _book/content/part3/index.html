@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Part III - Enhancements (Optional) | Introduction</title>
+        <title>Part III - Enhancements (Stretch) | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="4" data-basepath="../.." data-revision="Sat Oct 24 2015 08:25:35 GMT-0700 (PDT)">
+    <div class="book" data-level="4" data-basepath="../.." data-revision="Sat Oct 24 2015 08:30:42 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -308,7 +308,7 @@
                         
                             <b>4.</b>
                         
-                        Part III - Enhancements (Optional)
+                        Part III - Enhancements (Stretch)
                     </a>
             
             
@@ -437,17 +437,18 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="enhancements-as-challenges-optional">Enhancements as Challenges (Optional)</h1>
+                        <h1 id="enhancements-as-challenges-stretch">Enhancements as Challenges (Stretch)</h1>
 <p>You may have noticed some bugs and broken features with this app:</p>
-<h2 id="1-name-field">1. Name field</h2>
-<p>The name field (the first input box) is not being used at all. Modify the <code>app.js</code> so that it sends (emits) the text as something like <code>&quot;KV says: hello&quot;</code> where <code>&quot;KV&quot;</code> is from the first input field (with<code>id=&quot;you&quot;</code>) and <code>&quot;hello&quot;</code> is from the message field.</p>
-<h2 id="2-initial-field">2. Initial field</h2>
-<p>The name field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.</p>
+<h2 id="1-initial-field-part-i">1. Initial field - Part I</h2>
+<p>The name/initial input field (the first input box) is not being used at all. Modify the <code>app.js</code> so that it sends (emits) the text as something like <code>&quot;KV says: hello&quot;</code> where <code>&quot;KV&quot;</code> is from the first input field (with<code>id=&quot;you&quot;</code>) and <code>&quot;hello&quot;</code> is from the message field.</p>
+<h2 id="2-initial-field-part-ii">2. Initial field - Part II</h2>
+<p>The name/initial input field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.</p>
 <p>Hint: google &quot;html input field maximum length&quot; for a convenient HTML attribute that can be added to yout HTML file.</p>
 <h2 id="3-list-of-messages">3. List of Messages</h2>
 <p>It would be nice to see the message history on the server anytime you join the chat room. Unfortunately, we don&apos;t keep/store a message history on the server at all. </p>
 <p>One way to do this is to create an empty <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">array</a> that stores the messages. </p>
-<p>Then, whenever a message is received on the server, it can <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">push</a> (append) that message string into the array</p>
+<p>Then, whenever a message is received on the server, it can <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">push</a> (append) that message string into the array.</p>
+<p>Then whenever a user (new socket) connects to the server, (on <code>connection</code>) the server could iterate over all the messages in the array and <code>emit</code> them to that new client/socket.</p>
 
                     
                     </section>

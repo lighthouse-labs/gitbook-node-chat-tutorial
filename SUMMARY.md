@@ -16,5 +16,5 @@ This is the summary of my book.
     * [Node](content/part2/node.md)
     * [Express](content/part2/express.md)
     * [Socket IO](content/part2/socket.io.md)
-* [Part III - Enhancements (Optional)](content/part3/README.md)
+* [Part III - Enhancements (Stretch)](content/part3/README.md)
 * [Final Thoughts](content/final/README.md)
