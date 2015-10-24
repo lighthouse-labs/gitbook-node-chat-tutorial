@@ -8,7 +8,7 @@ The name field (the first input box) is not being used at all. Modify the `app.j
 
 ## 2. Initial field
 
-The name field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be added on. 
+The name field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.
 
 Hint: google "html input field maximum length" for a convenient HTML attribute that can be added to yout HTML file.
 
