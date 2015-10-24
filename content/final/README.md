@@ -1,6 +1,6 @@
 # Final Thoughts
 
-This demonstration was a bold attempt at showing you how it is easy to get started with web development, and that seemingly complex apps can be prototyped relatively quickly with modern software technology and approach. 
+This demonstration was a bold attempt at showing you how easy it is to get started with web development, and that seemingly complex apps can be prototyped relatively quickly with modern software technology and approach. 
 
 ## Feedback
 
