@@ -2,20 +2,19 @@
 Short form for developers.
 
 # coders
-Alias for devs / developers.
+Alias for devs/developers.
 
-# dependencies
-A dependency is any software (tool or third party code) that our project needs in order to function.
+# dependency
+Any software (tool or third party code) that our project needs in order to function.
 
 # a hack
-A crappy solution to an annoying problem that shouldn't even be there in the first place, or something like that.
+Using a technology in a way that is was not intended, but nonetheless works.
 
 # IDE
-Integrated Development Environment. Everything you need a developer in one interface, split into multiple sections usually. 
+Integrated Development Environment; everything you need to develop software in one interface, split into multiple sections usually. 
 
-# libraries
-
-Not the kind where you check out books. In software, a library is a package of code that performs a specific function and can be used by other code.
+# library
+A package of code that performs a specific function and can be used by other code.
 
 # third party
-Software that was written by someone else, not us or our team. It can be open source or proprietary (*shudder*).
+Someone or some team other than ourselves or our team that wrote some code that we're using on our project. Can be open source or proprietary.

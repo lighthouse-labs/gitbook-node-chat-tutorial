@@ -1,6 +1,5 @@
 # Setup
 
-This section contains instructions on accounts you need to create in order to build your app. 
+This section contains instructions to sign up for the accounts you need to create in order to build your app. 
 
-Thankfully, all you need is a laptop, a browser and a wifi connection.
-
+All you need is a laptop, a browser and a Wi-Fi connection.
