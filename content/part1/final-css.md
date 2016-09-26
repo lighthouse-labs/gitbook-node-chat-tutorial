@@ -2,20 +2,11 @@
 
 There is no "one right solution" to CSS. There are many approaches to solving the same thing (admittedly in some cases there are some better than others) not to mention all the creative freedom you get with it.
 
-That said, if you are looking for one possible CSS file so that you can move on, scroll on down! ...
-
-<br />
-<br />
-<br />
-<br />
-
+That said, if you are looking for one possible CSS file so that you can move on, scroll on down! ... 
 
 Oh hello....
 
-<br>
-<br>
-<br>
-<br>
+![png](https://cl.ly/3m0W2P1J3B2F/Image%202016-09-26%20at%201.57.11%20PM.png "empty")
 
 So,
 
