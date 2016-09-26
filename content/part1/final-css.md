@@ -4,16 +4,11 @@ There is no "one right solution" to CSS. There are many approaches to solving th
 
 That said, if you are looking for one possible CSS file so that you can move on, scroll on down! ...
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
+<br />
+
 
 Oh hello....
 
