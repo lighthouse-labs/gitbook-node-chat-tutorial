@@ -1,6 +1,6 @@
 # JavaScript in the Browser
 
-Let's add some behavior to your web page so it works. That's where JavaScript (JS) comes in.
+Let's add some behavior to our web page so it works. As mentioned previously, that's where JavaScript (JS) comes in.
 
 ## Step 1
 
