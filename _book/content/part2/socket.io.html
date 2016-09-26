@@ -1,454 +1,379 @@
+
 <!DOCTYPE HTML>
-<html lang="en" >
-    
+<html lang="" >
     <head>
-        
+        <title>Socket IO · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Socket IO | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.4.3">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
         
+    
     <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
     
         
-        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+    
         
     
+        
+    
+        
+    
+        
+    
+        
     
 
         
     
     
-    <link rel="next" href="../../content/part3/index.html" />
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part3/" />
     
     
-    <link rel="prev" href="../../content/part2/express.html" />
+    <link rel="prev" href="express.html" />
     
 
-        
     </head>
     <body>
         
+<div class="book">
+    <div class="book-summary">
         
-    <div class="book" data-level="3.4" data-basepath="../.." data-revision="Sat Oct 24 2015 08:30:42 GMT-0700 (PDT)">
-    
-
-<div class="book-summary">
-    <div class="book-search" role="search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <nav role="navigation">
-        <ul class="summary">
             
-            
-            
-            
-
-            
-
-            
-    
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../../index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                        Introduction
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1" data-path="content/setup/index.html">
-            
-                
-                    <a href="../../content/setup/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        Setup
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.1" data-path="content/setup/github.html">
-            
-                
-                    <a href="../../content/setup/github.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                        Github
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="content/setup/cloud9.html">
-            
-                
-                    <a href="../../content/setup/cloud9.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                        Cloud9
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="content/setup/chrome.html">
-            
-                
-                    <a href="../../content/setup/chrome.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                        Chrome
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="content/part1/index.html">
-            
-                
-                    <a href="../../content/part1/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        Part I - HTML &amp; CSS
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.1" data-path="content/part1/html.html">
-            
-                
-                    <a href="../../content/part1/html.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.</b>
-                        
-                        HTML
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2" data-path="content/part1/dev-tools.html">
-            
-                
-                    <a href="../../content/part1/dev-tools.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.2.</b>
-                        
-                        Dev Tools
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3" data-path="content/part1/css.html">
-            
-                
-                    <a href="../../content/part1/css.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.3.</b>
-                        
-                        CSS
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4" data-path="content/part1/final-css.html">
-            
-                
-                    <a href="../../content/part1/final-css.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.4.</b>
-                        
-                        CSS (Solution!)
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="content/part2/index.html">
-            
-                
-                    <a href="../../content/part2/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        Part II - JavaScript
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="3.1" data-path="content/part2/client-js.html">
-            
-                
-                    <a href="../../content/part2/client-js.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.1.</b>
-                        
-                        Client Side
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.2" data-path="content/part2/node.html">
-            
-                
-                    <a href="../../content/part2/node.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.2.</b>
-                        
-                        Node
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="content/part2/express.html">
-            
-                
-                    <a href="../../content/part2/express.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.3.</b>
-                        
-                        Express
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="3.4" data-path="content/part2/socket.io.html">
-            
-                
-                    <a href="../../content/part2/socket.io.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.4.</b>
-                        
-                        Socket IO
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="content/part3/index.html">
-            
-                
-                    <a href="../../content/part3/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        Part III - Enhancements (Stretch)
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="content/final/index.html">
-            
-                
-                    <a href="../../content/final/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        Final Thoughts
-                    </a>
-            
-            
-        </li>
-    
-
-
-            
-            <li class="divider"></li>
-            <li>
-                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                    Published with GitBook
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../setup/github.html">
+            
+                <a href="../setup/github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
+            
+                <a href="../setup/cloud9.html">
+            
+                    
+                    Cloud9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../setup/chrome.html">
+            
+                <a href="../setup/chrome.html">
+            
+                    
+                    Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../part1/">
+            
+                <a href="../part1/">
+            
+                    
+                    Part I - HTML & CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../part1/html.html">
+            
+                <a href="../part1/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../part1/dev-tools.html">
+            
+                <a href="../part1/dev-tools.html">
+            
+                    
+                    Dev Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../part1/css.html">
+            
+                <a href="../part1/css.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../part1/final-css.html">
+            
+                <a href="../part1/final-css.html">
+            
+                    
+                    CSS (Solution!)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Part II - JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="client-js.html">
+            
+                <a href="client-js.html">
+            
+                    
+                    Client Side
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="node.html">
+            
+                <a href="node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="express.html">
+            
+                <a href="express.html">
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="socket.io.html">
+            
+                <a href="socket.io.html">
+            
+                    
+                    Socket IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../part3/">
+            
+                <a href="../part3/">
+            
+                    
+                    Part III - Enhancements (Stretch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../final/">
+            
+                <a href="../final/">
+            
+                    
+                    Final Thoughts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
 
     <div class="book-body">
-        <div class="body-inner">
-            <div class="book-header" role="navigation">
-    <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
-    
-    <a href="../../GLOSSARY.html" class="btn pull-left" aria-label="Glossary"><i class="fa fa-sort-alpha-asc"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
+        
+            <div class="body-inner">
+                
+                    
 
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
+<div class="book-header" role="navigation">
     
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">
-                    Share on Twitter
-                </button>
-                <button type="button" data-sharing="google-plus" class="button">
-                    Share on Google
-                </button>
-                <button type="button" data-sharing="facebook" class="button">
-                    Share on Facebook
-                </button>
-                <button type="button" data-sharing="weibo" class="button">
-                    Share on Weibo
-                </button>
-                <button type="button" data-sharing="instapaper" class="button">
-                    Share on Instapaper
-                </button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-    
-    
-    
-
 
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../" >Introduction</a>
+        <a href="../.." >Socket IO</a>
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1" role="main">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-">
-                    
-                        <h1 id="socket-io-for-real-time-messaging">Socket.IO for Real-time messaging</h1>
-<p>Now it&apos;s time to add the last missing, yet crucial piece to our app: CHAT FUNCTIONALITY!</p>
-<p>To do this, we will leverage yet another 3rd party Node module. It&apos;s called Socket.io</p>
-<p>Check it out here: <a href="http://socket.io/" target="_blank">http://socket.io/</a>.</p>
-<p>Socket.io will leverage a more core technology that browsers give us called Web Sockets.</p>
-<p>What&apos;s nice about Socket.io is that it will let us write similar JS code on both the client (browser) side and at the server (Node) side. </p>
-<h2 id="step-1">Step 1</h2>
-<p>Run the following command in the terminal window to install it on the server: <code>npm install socket.io --save</code></p>
-<p><img src="http://d.pr/i/17YCR/5L1xyxJ3+" alt="screenshot"></p>
-<h2 id="step-2">Step 2</h2>
-<p>Now let&apos;s add some code in <code>server.js</code> that will use this library. This code block should be placed before/above <code>server.listen</code>:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> io = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;socket.io&apos;</span>)(server);
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="socketio-for-real-time-messaging">Socket.IO for Real-time messaging</h1><p>Now it&apos;s time to add the last missing, yet crucial piece to our app: CHAT FUNCTIONALITY!</p><p>To do this, we will leverage yet another 3rd party Node module. It&apos;s called Socket.io</p><p>Check it out here: <a href="http://socket.io/" target="_blank">http://socket.io/</a>.</p><p>Socket.io will leverage a more core technology that browsers give us called Web Sockets.</p><p>What&apos;s nice about Socket.io is that it will let us write similar JS code on both the client (browser) side and at the server (Node) side.</p><h2 id="step-1">Step 1</h2><p>Run the following command in the terminal window to install it on the server: <code>npm install socket.io --save</code></p><p><img alt="screenshot" src="http://d.pr/i/17YCR/5L1xyxJ3+"></p><h2 id="step-2">Step 2</h2><p>Now let&apos;s add some code in <code>server.js</code> that will use this library. This code block should be placed before/above <code>server.listen</code>:</p><pre><code class="lang-js"><span class="hljs-keyword">var</span> io = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;socket.io&apos;</span>)(server);
 
 io.on(<span class="hljs-string">&apos;connection&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
   socket.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
@@ -457,37 +382,18 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>, <span class="hljs
   socket.on(<span class="hljs-string">&apos;disconnect&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     io.emit(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-string">&quot;User disconnected&quot;</span>);
   });
-});
-</code></pre>
-<h2 id="step-3">Step 3</h2>
-<p>Next, we need to add similar logic to the client app.</p>
-<p>Open the <code>index.html</code> file and modify the <code>script</code> tags below so that we also reference and make use of Socket.IO. We can do this by adding one more script tag before our <code>app.js</code>script tag, so that it looks like this down there:</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdn.socket.io/socket.io-1.2.0.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://code.jquery.com/jquery-1.11.1.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;app.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-</code></pre>
-<h2 id="step-4">Step 4</h2>
-<p>Open <code>app.js</code>, our client-side JS code file and let&apos;s add some code to send and receive messages from the browser.</p>
-<p>Add the following code to the very top of the file:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> socket = io();
-</code></pre>
-<p>This is saying that <code>socket</code> is now a reference to the SocketIO library.</p>
-<h2 id="step-5">Step 5</h2>
-<p>In that same file, replace the <code>alert</code> line from before with the following code:</p>
-<pre><code class="lang-js">  socket.emit(<span class="hljs-string">&apos;message&apos;</span>, text);
-  $(<span class="hljs-string">&apos;#m&apos;</span>).val(<span class="hljs-string">&apos;&apos;</span>);
-</code></pre>
-<p>The code above says to emit the textual message to the server instead of performing our temporary <code>alert</code> behavior. The second line in the code simply clears the input so that another message can be typed by the same user.</p>
-<p>We&apos;re not done yet, we need to listen for messages that are received from the server and append them into the message list. Add the following code at the bottom of the file:</p>
-<pre><code class="lang-js">socket.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
+});</code></pre>
+<h2 id="step-3">Step 3</h2><p>Next, we need to add similar logic to the client app.</p><p>Open the <code>index.html</code> file and modify the <code>script</code> tags below so that we also reference and make use of Socket.IO. We can do this by adding one more script tag before our <code>app.js</code>script tag, so that it looks like this down there:</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.socket.io/socket.io-1.2.0.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://code.jquery.com/jquery-1.11.1.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<h2 id="step-4">Step 4</h2><p>Open <code>app.js</code>, our client-side JS code file and let&apos;s add some code to send and receive messages from the browser.</p><p>Add the following code to the very top of the file:</p><pre><code class="lang-js"><span class="hljs-keyword">var</span> socket = io();</code></pre>
+<p>This is saying that <code>socket</code> is now a reference to the SocketIO library.</p><h2 id="step-5">Step 5</h2><p>In that same file, replace the <code>alert</code> line from before with the following code:</p><pre><code class="lang-js">  socket.emit(<span class="hljs-string">&apos;message&apos;</span>, text);
+  $(<span class="hljs-string">&apos;#m&apos;</span>).val(<span class="hljs-string">&apos;&apos;</span>);</code></pre>
+<p>The code above says to emit the textual message to the server instead of performing our temporary <code>alert</code> behavior. The second line in the code simply clears the input so that another message can be typed by the same user.</p><p>We&apos;re not done yet, we need to listen for messages that are received from the server and append them into the message list. Add the following code at the bottom of the file:</p><pre><code class="lang-js">socket.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
   <span class="hljs-keyword">var</span> incomingMessage = $(<span class="hljs-string">&apos;&lt;li&gt;&apos;</span>).text(msg);
   $(<span class="hljs-string">&apos;#messages&apos;</span>).append(incomingMessage);
-});
-</code></pre>
-<p>This part tells the browser that any time a message is received from the real time web socket connection with the server, create a new <code>&lt;li&gt;</code> (list item) HTML element and append it to the messages <code>&lt;ul&gt;</code> (container).</p>
-<h2 id="final-code-for-app-js">Final code for app.js</h2>
-<p>The <code>app.js</code> file should look like this:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> socket = io();
+});</code></pre>
+<p>This part tells the browser that any time a message is received from the real time web socket connection with the server, create a new <code>&lt;li&gt;</code> (list item) HTML element and append it to the messages <code>&lt;ul&gt;</code> (container).</p><h2 id="final-code-for-appjs">Final code for app.js</h2><p>The <code>app.js</code> file should look like this:</p><pre><code class="lang-js"><span class="hljs-keyword">var</span> socket = io();
 
 $(<span class="hljs-string">&apos;form&apos;</span>).submit(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">var</span> text = $(<span class="hljs-string">&apos;#m&apos;</span>).val();
@@ -499,11 +405,8 @@ $(<span class="hljs-string">&apos;form&apos;</span>).submit(<span class="hljs-fu
 socket.on(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
   <span class="hljs-keyword">var</span> incomingMessage = $(<span class="hljs-string">&apos;&lt;li&gt;&apos;</span>).text(msg);
   $(<span class="hljs-string">&apos;#messages&apos;</span>).append(incomingMessage);
-});
-</code></pre>
-<h2 id="final-code-for-server-js">Final code for server.js</h2>
-<p>The <code>server.js</code> file should look like this:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+});</code></pre>
+<h2 id="final-code-for-serverjs">Final code for server.js</h2><p>The <code>server.js</code> file should look like this:</p><pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">var</span> app = express();
 
 <span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
@@ -525,43 +428,88 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>, <span class="hljs
 server.listen(process.env.PORT, process.env.IP, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">var</span> addr = server.address();
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Chat server running at&quot;</span>, addr.address + <span class="hljs-string">&quot;:&quot;</span> + addr.port);
-});
-</code></pre>
-<h2 id="whoa-it-works">Whoa, it works!</h2>
-<p>Make sure all your files are saved, and the node server is still running, and give it a shot.</p>
-<p>That&apos;s right, it works! That&apos;s all it took. The basic chat functionality works. Have your peer go to the same URL that you&apos;re on and you guys should be able to communicate!</p>
-<p>Note: new comers to the chat room can&apos;t see any previous messages (message history). We would have to implement that functionality for it to work that way.</p>
-<h2 id="screenshot">Screenshot</h2>
-<p><img src="http://d.pr/i/15CQJ/4WxT350g+" alt="screenshot"></p>
-
-                    
-                    </section>
-                
-                
-                </div>
-            </div>
+});</code></pre>
+<h2 id="whoa-it-works">Whoa, it works!</h2><p>Make sure all your files are saved, and the node server is still running, and give it a shot.</p><p>That&apos;s right, it works! That&apos;s all it took. The basic chat functionality works. Have your peer go to the same URL that you&apos;re on and you guys should be able to communicate!</p><p>Note: new comers to the chat room can&apos;t see any previous messages (message history). We would have to implement that functionality for it to work that way.</p><h2 id="screenshot">Screenshot</h2><p><img alt="screenshot" src="http://d.pr/i/15CQJ/4WxT350g+"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
         </div>
-
-        
-        <a href="../../content/part2/express.html" class="navigation navigation-prev " aria-label="Previous page: Express"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../../content/part3/index.html" class="navigation navigation-next " aria-label="Next page: Part III - Enhancements (Stretch)"><i class="fa fa-angle-right"></i></a>
-        
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
     </div>
 </div>
 
-        
-<script src="../../gitbook/app.js"></script>
+                        </div>
+                    </div>
+                
+            </div>
 
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
-    gitbook.start(config);
-});
-</script>
+            
+                
+                <a href="express.html" class="navigation navigation-prev " aria-label="Previous page: Express">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part3/" class="navigation navigation-next " aria-label="Next page: Part III - Enhancements (Stretch)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Socket IO","level":"1.4.4","depth":2,"next":{"title":"Part III - Enhancements (Stretch)","level":"1.5","depth":1,"path":"content/part3/README.md","ref":"content/part3/README.md","articles":[]},"previous":{"title":"Express","level":"1.4.3","depth":2,"path":"content/part2/express.md","ref":"content/part2/express.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/socket.io.md","mtime":"2016-08-31T19:25:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-26T20:06:53.033Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
 
         
-    </body>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
     
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
 </html>
+
