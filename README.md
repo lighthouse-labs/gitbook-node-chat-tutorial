@@ -10,8 +10,6 @@ My name is Faisal Al-Tameemi, Head Instructor at Lighthouse Labs Toronto. I'll b
 
 My background is in software development, focusing on web technologies. I started programming in university and haven't stopped since.
 
-I'm into Machine Learning, Quantum Mechanics, Psychology and Netflix (probably addicted at this point).
-
 
 ## Schedule
 
