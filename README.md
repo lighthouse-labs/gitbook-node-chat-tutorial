@@ -8,9 +8,10 @@ Hello and thank you for joining us for the CUEBC Code Camp at Lighthouse Labs.
 
 My name is Faisal Al-Tameemi, Head Instructor at Lighthouse Labs Toronto. I'll be your host today.
 
-My background is in software development, focusing on web technologies. I started programming at a young age but I also started teaching computer use and coding at a very young age (eight, to be exact).
+My background is in software development, focusing on web technologies. I started programming in university and haven't stopped since.
 
-What else... I like video games and spicy food. I don't like spiders.
+I'm into Machine Learning, Quantum Mechanics, Psychology and Netflix (probably addicted at this point).
+
 
 ## Schedule
 
