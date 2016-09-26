@@ -6,7 +6,7 @@
 
 Hello and thank you for joining us for the CUEBC Code Camp at Lighthouse Labs.
 
-My name is Khurram Virani, co-founder of Lighthouse Labs. I'll be your host today. 
+My name is Faisal Al-Tameemi, Head Instructor at Lighthouse Labs Toronto. I'll be your host today.
 
 My background is in software development, focusing on web technologies. I started programming at a young age but I also started teaching computer use and coding at a very young age (eight, to be exact).
 
