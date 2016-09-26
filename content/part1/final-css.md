@@ -6,56 +6,32 @@ That said, if you are looking for one possible CSS file so that you can move on,
 
 Oh hello....
 
+
 ![png](https://cl.ly/3m0W2P1J3B2F/Image%202016-09-26%20at%201.57.11%20PM.png "empty")
+
 
 So,
 
-<br>
-<br>
-<br>
+
+![png](https://cl.ly/3m0W2P1J3B2F/Image%202016-09-26%20at%201.57.11%20PM.png "empty")
+
 
 I'm intentionally leaving a LOT of white space here in case you didn't mean to see the spoiler.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+![png](https://cl.ly/3m0W2P1J3B2F/Image%202016-09-26%20at%201.57.11%20PM.png "empty")
+
 
 But, if you're ready to see the code, you're almost there...
 
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+![png](https://cl.ly/3m0W2P1J3B2F/Image%202016-09-26%20at%201.57.11%20PM.png "empty")
 
 
 I said, almost.
 
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
+![png](https://cl.ly/3m0W2P1J3B2F/Image%202016-09-26%20at%201.57.11%20PM.png "empty")
 
 
 ```css
