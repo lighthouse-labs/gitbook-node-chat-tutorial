@@ -1,3 +1,3 @@
 # Part II
 
-## JavaScript: jQuery, Node, Express, and WebSockets
+## JavaScript: jQuery, Node, Express, and Web Sockets
