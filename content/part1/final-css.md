@@ -28,7 +28,7 @@ So,
 <br>
 <br>
 
-I'm intentionally leaving a LOT of white space here in case you didn't mean to see the spoiler.
+I'm intentionally leaving a **lot** of space here in case you didn't mean to see the spoiler.
 
 <br>
 <br>
@@ -40,20 +40,18 @@ I'm intentionally leaving a LOT of white space here in case you didn't mean to s
 <br>
 <br>
 
-But, if you're ready to see the code, you're almost there...
+But, if you're ready to see the code, you're almost there.
 
 <br>
 <br>
 <br>
 <br>
 <br>
-
 <br>
 <br>
 <br>
 <br>
 <br>
-
 
 I said, almost.
 
@@ -62,15 +60,12 @@ I said, almost.
 <br>
 <br>
 <br>
-
-<br>
-
 <br>
 <br>
 <br>
 <br>
 <br>
-
+<br>
 
 ```css
 * { 

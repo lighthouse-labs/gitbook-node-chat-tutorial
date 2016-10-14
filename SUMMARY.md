@@ -3,9 +3,9 @@
 This is the summary of my book.
 
 * [Setup](content/setup/README.md)
+    * [Chrome](content/setup/chrome.md)
     * [Github](content/setup/github.md)
     * [Cloud9](content/setup/cloud9.md)
-    * [Chrome](content/setup/chrome.md)
 * [Part I - HTML & CSS](content/part1/README.md)
     * [HTML](content/part1/html.md)
     * [Dev Tools](content/part1/dev-tools.md)

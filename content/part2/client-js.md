@@ -6,10 +6,10 @@ Let's add some behavior to your web page so it works. That's where JavaScript (J
 
 Much like with the CSS, we need to link our new `.js` code with our web page, our `.html` content file.
 
-Add the following HTML tag _inside_ the `<body>` element but right before it's closed off with `</body>`. It's not necessary but considered best practice to reference all the JS at the end of the page.
+Add the following tags to the bottom of the HTML file.
 
 ```html
-<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script src="app.js"></script>
 ```
 
@@ -42,7 +42,7 @@ Very soon, we'll create our own function while using other functions. It's going
 Remove the `alert` code and let's get down to business. We want to make it so when our `<form>` is submitted (via enter key or by clicking the send button), we read the text content in the 2 input fields (`id`'d as `m` and `you` in the HTML file) and do something with it, for now let's just `alert` it.
 
 ```js
-$('form').submit(function() {
+$('form').submit(function () {
   var text = $('#m').val();
   alert(text);
   return false;

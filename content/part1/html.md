@@ -1,6 +1,6 @@
 # HTML
 
-HTML is short for Hypertext Markup Language. It's a fancy way of saying that we use "markup" text/English to annotate and describe the structure of our Web page content. It's the bread and butter of every web site you've every visited.
+HTML is short for Hypertext Markup Language. What that means is that we use "markup" text to describe the structure of the content in our Web page. It's the bread and butter of every web site you've every visited.
 
 Let's use it to build our app.
 
@@ -13,15 +13,7 @@ Create an new file in your project called `index.html` by right clicking the top
 Open the file and add the following html code into it.
 
 ```html
-<!doctype html>
-<html>
-  <head>
-    <title>CUEBC Chat App!</title>
-  </head>
-  <body>
-    Hello world!
-  </body>
-</html>
+<h1>hello, world</h1>
 ```
 
 Save the file using <kbd>cmd</kbd> + <kbd>s</kbd> just like you would in any other text editor.
@@ -47,7 +39,7 @@ Here's a description of the what it contains.
 3. Inside the message box is a vertical list of messages with zebra-striping (alternating background colours)
 4. Below that is a form containing two input fields and a "Send" button. The first input field is for two letter initials of who is sending the message and the second is the message itself.
 
-The initial HTML for this can be something like the following. Type out this code (please type it out instead of using copy and paste) in between the `<body>` and `</body>` lines.
+The initial HTML for this can be something like the following. Replace the content of `index.html` with this code. Please type it out instead of using copy and paste.
 
 ```html
 <main>
@@ -63,7 +55,7 @@ The initial HTML for this can be something like the following. Type out this cod
 
 Note a few important properties of HTML here.
 
-### A. Tags define Elements
+### A. Tags define elements
 
 Tags that look like `<this>` have _meaning_. Other examples of tags would be `<p>` for a paragraph and `<h1>` for a first level heading.
 
@@ -87,7 +79,7 @@ Let's save and refresh the other tab where the `index.html` file is open and bei
 
 Hm...not quite. Why does it appear this way and not like the example? 
 
-We have provided the browser with a good understanding of the _content_ of our Web page, but not how to present it. The presentation rules are defined using another language called CSS.
+We have provided the browser with a good understanding of the _structure_ of our Web page, but not how to present it. The presentation rules are defined using another language called CSS.
 
 ## Questions?
 

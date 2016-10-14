@@ -1,3 +1,3 @@
 # Part I
 
-TODO: Describe this section
+## HTML and CSS

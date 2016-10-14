@@ -116,7 +116,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.1" data-path="../setup/chrome.html">
+            
+                <a href="../setup/chrome.html">
+            
+                    
+                    Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
             
                 <a href="../setup/github.html">
             
@@ -129,25 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
             
                 <a href="../setup/cloud9.html">
             
                     
                     Cloud9
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="../setup/chrome.html">
-            
-                <a href="../setup/chrome.html">
-            
-                    
-                    Chrome
             
                 </a>
             
@@ -373,8 +373,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="css">CSS</h1><p>If HTML is the bread and butter of a web page, then CSS is our butter knife. Here&apos;s a picture of one, because, why not?</p><p><img alt="screenshot" src="http://d.pr/i/1jmFc/2Ytr5fsx+"></p><p>Credit: Google Images</p><p>So why is CSS the knife? Well, it controls <em>what goes where</em>. Using CSS we declare how we&apos;d like the content (HTML) to be presented.</p><p>More technically: CSS stands for Cascading Stylesheets, or something like that. The key word here is &quot;style&quot;, something us Vancouverites generally lack. JK JK!</p><h2 id="step-1">Step 1</h2><p>Let&apos;s prepare our HTML document to <em>link</em> a stylesheet (<code>.css</code>) file to it.</p><p>Add the following HTML tag <em>inside</em> the <code>&lt;head&gt;</code> tag, ie right below/after the <code>&lt;title&gt;</code> element:</p><pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span></code></pre>
-<p>Now whenever this HTML file is loaded again, it will ask the browser to fetch another file (called <code>style.css</code>) from our web server and apply it to our HTML page.</p><h2 id="step-2">Step 2</h2><p>Oops, we don&apos;t even have that file in our project, let&apos;s add it using this again:</p><p><img alt="screenshot" src="http://d.pr/i/1gxkO/3zpwIs1q+"></p><p>Call it <code>style.css</code>.</p><h2 id="step-3">Step 3</h2><p>Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).</p><p>Note: if no changes are reflected in the document (upon refreshing the page) then please confirm that your <code>&lt;link&gt;</code> tag is correct. Still a problem? Ask for help from your peers or a mentor.</p><pre><code class="lang-css">* { 
+                                <h1 id="css">CSS</h1><p>If HTML is the bread and butter of a web page, then CSS is our butter knife.</p><p>Why is CSS the knife? Well, it controls <em>what goes where</em>. Using CSS we declare how we&apos;d like the content (HTML) to be presented.</p><p>CSS stands for Cascading Stylesheets. The key word here is &quot;style&quot;, referring to the way something <em>looks</em>.</p><h2 id="step-1">Step 1</h2><p>Let&apos;s prepare our HTML document to <em>link</em> a stylesheet (<code>.css</code>) file to it.</p><p>Add the following HTML tag to the top of your <code>index.html</code> file.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span></code></pre>
+<p>When the HTML file is loaded again, it will ask the browser to fetch another file (called <code>style.css</code>) from the web server and apply its rules to our HTML page.</p><h2 id="step-2">Step 2</h2><p>Oops, we don&apos;t even have that file in our project, let&apos;s add it the same way we created the <code>index.html</code> file.</p><p><img alt="screenshot" src="http://d.pr/i/1gxkO/3zpwIs1q+"></p><p>Call it <code>style.css</code>.</p><h2 id="step-3">Step 3</h2><p>Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).</p><p>Note: if no changes are reflected in the Web page (upon refreshing the page) then please confirm that your <code>&lt;link&gt;</code> tag is correct. Still a problem? Ask for help from your peers or a mentor.</p><pre><code class="lang-css">* { 
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; 
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>; 
   <span class="hljs-attribute">box-sizing</span>: border-box; 
@@ -392,7 +392,7 @@
   <span class="hljs-attribute">background-color</span>: white;
   <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
 }</code></pre>
-<p>The first section with the <code>*</code> is about normalizing the style so that it&apos;s consistent across all browsers (each has their slightly different default styling). Don&apos;t worry about it too much, it&apos;s a bit of <em>a hack</em>.</p><h2 id="step-4">Step 4</h2><p>I&apos;m actaully <em>not</em> going to explain to you what this code is doing and how it&apos;s working, actually. Discuss amongst yourself and try and use your powers of reasoning, critical thinking and experimentation to solve the mysteries of CSS syntax. Look for patterns to help identify conventions and rules. HTML has its own completely different set of rules than CSS, but all languages have rules, and computer languages need strict rules. Use this to your benefit to deduce certain conclusions.</p><p>Also, feel free to google terms like <a href="https://google.com/?q=CSS+background+color" target="_blank">CSS background color</a> or even <a href="https://www.bing.com/search?q=&quot;developers+developers+developers&quot;" target="_blank">Please explain CSS bc Khurram won&apos;t!</a></p><p>Also, the end result should look like something a bit closer to what we&apos;re trying to get to.</p><h2 id="step-5---a-challenge">Step 5 - A challenge</h2><p>First, add a few &quot;line items&quot; (eg: <code>&lt;li&gt;KV says: hello&lt;/li&gt;</code>) within the <code>&lt;ul&gt;</code> element so that you have some fake/mock messages that can be styled with. Add at least four of these (We can remove them later when the app comes alive).</p><p>Now use CSS to try and make the page look closer to this:</p><p><img alt="final" src="http://d.pr/i/1k0TK/33fupKLm+"></p><p>If you have time to spare, give it your own unique look.</p><h3 id="properties">Properties</h3><p>Here is a list of CSS properties that you&apos;ll want to leverage,</p><ul><li><code>width</code>
+<p>The first section with the <code>*</code> is about making CSS act more predictably. Every browser has slightly different default styling. Don&apos;t worry about it too much, it&apos;s a bit of <em>a hack</em>.</p><h2 id="step-4">Step 4</h2><p>I&apos;m <em>not</em> going to explain to you what this code is doing and how it&apos;s working. Discuss among yourself and try and use your powers of reasoning, critical thinking and experimentation to solve the mysteries of CSS syntax. Look for patterns to help identify conventions and rules. HTML has its own completely different set of rules from CSS, but all languages have rules, and computer languages need strict rules. Use this to your benefit to reason toward conclusions.</p><p>Also, feel free to Google terms like &quot;<a href="https://google.com/?q=CSS+background+color" target="_blank">CSS background color</a>&quot;.</p><p>The end result should look like something a bit closer to what we&apos;re trying to get to.</p><h2 id="step-5---a-challenge">Step 5 - A challenge</h2><p>Add a few &quot;list items&quot; (for example <code>&lt;li&gt;DV says: hello&lt;/li&gt;</code>) within the <code>&lt;ol&gt;</code> element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.</p><p>Now use CSS to try and make the page look closer to this.</p><p><img alt="final" src="http://d.pr/i/1k0TK/33fupKLm+"></p><p>If you have time to spare, give it your own unique look.</p><h3 id="properties">Properties</h3><p>Here is a list of CSS properties that you may want to try.</p><ul><li><code>width</code>
 </li>
 <li><code>background-color</code>
 </li>
@@ -406,7 +406,7 @@
 </li>
 <li><code>font-size</code>
 </li></ul>
-<p>Feel free to google them up along with the keyword &quot;CSS&quot; to learn by example. StackOverflow, w3schools and MDN are all great resources that you&apos;ll likely end up on naturally. They tend to trend highest in results.</p><p>BTW you&apos;ll likely need a few more CSS properties. Take your time :)</p>
+<p>Feel free to Google them along with the keyword &quot;CSS&quot; to learn by example. StackOverflow, w3schools and MDN are all great resources that you&apos;ll likely end up on naturally. They tend to be highest in results.</p><p>You&apos;ll likely need a few more CSS properties. Take your time. :)</p>
                                 
                                 </section>
                             
@@ -449,7 +449,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.3.3","depth":2,"next":{"title":"CSS (Solution!)","level":"1.3.4","depth":2,"path":"content/part1/final-css.md","ref":"content/part1/final-css.md","articles":[]},"previous":{"title":"Dev Tools","level":"1.3.2","depth":2,"path":"content/part1/dev-tools.md","ref":"content/part1/dev-tools.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part1/css.md","mtime":"2016-08-31T19:25:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-26T20:06:53.033Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.3.3","depth":2,"next":{"title":"CSS (Solution!)","level":"1.3.4","depth":2,"path":"content/part1/final-css.md","ref":"content/part1/final-css.md","articles":[]},"previous":{"title":"Dev Tools","level":"1.3.2","depth":2,"path":"content/part1/dev-tools.md","ref":"content/part1/dev-tools.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part1/css.md","mtime":"2016-10-14T02:21:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-14T01:04:34.755Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -2,11 +2,11 @@
 
 Hello and thank you for joining us for this JavaScript workshop at Lighthouse Labs.
 
-My name is David VanDusen, Web bootcamp instructor at Lighthouse Labs. I'll be your host today. 
+My name is David VanDusen, Web bootcamp instructor at Lighthouse Labs, and your instructor today. 
 
 My background is in software development, focusing on Web technologies. I started programming at a young age and built websites during some of the most exciting times in the technologies' histories.
 
-That said, I started out as a musician and fine artist. So, whatever we make today, let's make it pretty.
+That said, I started out in fine arts and music and have played everything from piano in a jazz big band to singing in a thrash metal band. Programmers are all sorts of people.
 
 ## Schedule
 

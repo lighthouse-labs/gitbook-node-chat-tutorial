@@ -1,14 +1,14 @@
 # Cloud9.io
 
-Cloud9 (c9) is amazing. It is for developers what Google docs is for MS Office.
+Cloud9 (c9) is amazing. It is for developers what Google Docs is for Microsoft Office.
 
 It takes a lot of time and effort to setup your computer for writing software. There are a whole bunch of libraries and tools to install, and it's especially hard to make sure every developer on the same team has the exact same versions for all the dependencies.
 
-This is big hurdle especially when getting started with coding. Cloud9 gives us a pre-configured machine in the cloud as well as a really slick IDE right in the browser. As long as you have Internet, you can immediately start coding like a _Real Developer_&trade;.
+This is big hurdle especially when getting started with coding. Cloud9 gives us a pre-configured machine in the cloud as well as a really slick code editor right in the browser. As long as you have Internet, you can immediately start coding like a professional developer.
 
 ## Sign up
 
-So with that said, go ahead and [sign up for a c9 account on their website](https://c9.io/web/sign-up/free). _Use your github profile_ to sign up.
+So with that said, go ahead and [sign up for a c9 account on their website](https://c9.io/web/sign-up/free). **Use your github profile** to sign up.
 
 ![screenshot](http://d.pr/i/T611/3KkIT0na+)
 
