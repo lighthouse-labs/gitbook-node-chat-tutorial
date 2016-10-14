@@ -16,14 +16,6 @@ Let's then move all the "client" side files into their own folder called `client
 
 ## Step 2
 
-Switch focus to the "bash" command line terminal tab at the bottom by clicking on its label, and initialize the project as a node application, by typing in `npm init -y`.
-
-![screenshot](http://d.pr/i/ljXa/2V9uS9Ub+)
-
-NPM is a package manager for Node (Node Package Manager). It will be used later to install other packages into our app. 
-
-## Step 3
-
 Now let's add another JavaScript file to be run on the server side which will power the logic for our chat application. Call it `server.js` and put it at the top level (at the same level as the `client` folder.)
 
 In it, put this one test line of code, to print a message to the screen so we know that it is working.
@@ -34,7 +26,7 @@ console.log('hello from our node script!');
 
 ![screenshot](http://d.pr/i/1j4Jg/2F7WTbb6+)
 
-## Step 4
+## Step 3
 
 Let's run it. We'll use the Node runner given to us by Cloud9 to make life easy here.
 

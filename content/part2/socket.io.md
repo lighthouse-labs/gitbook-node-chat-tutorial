@@ -12,7 +12,9 @@ What's nice about Socket.io is that it will let us write similar JS code on both
 
 ## Step 1
 
-Run the following command in the terminal window to install it on the server: `npm install socket.io --save`
+Run the following command in the terminal window to install it on the server.
+ 
+`npm install socket.io`
 
 ![screenshot](http://d.pr/i/17YCR/5L1xyxJ3+)
 

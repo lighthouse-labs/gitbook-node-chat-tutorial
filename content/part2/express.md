@@ -8,7 +8,11 @@ While Node comes with basic HTTP handling support, a very (probably the most) po
 
 ## Step 1
 
-Let's install and save the Express library into our project by running the command: `npm install express --save`
+Let's install and save the Express library into our project by running the command.
+
+`npm install express`
+
+This downloads some code using the Node Package Manager (NPM) that we can use to make our lives easier.
 
 ![screenshot](http://d.pr/i/10kgL/2BlmzYbb+)
 
@@ -33,7 +37,7 @@ server.listen(process.env.PORT, process.env.IP, function() {
 
 So a bunch of new code and syntax was just introduced there. Let's attempt to break it down.
 
-The first few lines are just loading external modules. We then tell the Express app to server all static content from the `'client'` folder.
+The first few lines are just loading external modules. We then tell the Express app to server all static content from the `client` folder.
 
 When all the setup work is done, we then tell the server to listen in on a certain port and IP address.
 
