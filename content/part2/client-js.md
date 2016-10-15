@@ -10,7 +10,7 @@ Add the following tags to the bottom of the HTML file.
 
 ```html
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script src="app.js"></script>
+<script src="/app.js"></script>
 ```
 
 Now whenever you refresh/load the web page, it will reference two separate JS files for the browser to download (at the end), one of which is external (3rd party) to our application. This 3rd party library called jQuery is there to make life easier. We don't _need_ it, but with it we can write less code. This is why most websites use jQuery or other libraries like it.

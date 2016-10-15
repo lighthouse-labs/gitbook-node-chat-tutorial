@@ -29,9 +29,6 @@ io.on('connection', function (socket) {
   socket.on('message', function (msg) {
     io.emit('message', msg);
   });
-  socket.on('disconnect', function () {
-    io.emit('message', "User disconnected");
-  });
 });
 ```
 
@@ -43,8 +40,8 @@ Open the `index.html` file and modify the `script` tags below so that we also re
 
 ```html
 <script src="https://cdn.socket.io/socket.io-1.5.0.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script src="app.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
 ```
 
 ## Step 4
@@ -119,9 +116,6 @@ var io = require('socket.io')(server);
 io.on('connection', function (socket) {
   socket.on('message', function (msg) {
     io.emit('message', msg);
-  });
-  socket.on('disconnect', function () {
-    io.emit('message', "User disconnected");
   });
 });
 
