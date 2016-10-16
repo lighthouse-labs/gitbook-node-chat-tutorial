@@ -23,7 +23,3 @@ The objective is not to fully understand every line of code, but to understand t
 The finished app that we'll be building in just a few hours today will look and feel much like this.
 
 ![example](http://d.pr/i/1k0TK/33fupKLm+)
-
-## Let's get started!
-
-You may be tempted to start hacking away at code, but you can wait until 11AM, ie after the initial talk, can't you? please? #kthxbye
