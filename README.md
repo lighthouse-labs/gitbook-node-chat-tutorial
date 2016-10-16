@@ -8,12 +8,6 @@ My background is in software development, focusing on Web technologies. I starte
 
 That said, I started out in fine arts and music and have played everything from piano in a jazz big band to singing in a thrash metal band. Programmers are all sorts of people.
 
-## Schedule
-
-This is the plan for the day.
-
-TODO: Fill this in.
-
 ## Pair programming
 
 You're encouraged to buddy up with one other person. That said, both of you should ideally do the setup work individually on your own laptops. 
