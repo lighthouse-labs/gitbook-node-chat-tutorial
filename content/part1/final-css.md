@@ -90,7 +90,7 @@ main {
   border-radius: 10px;
 }
 
-input[type=text] {
+input {
   border: solid 1px #244751;
   padding: .5em;
   font-size: 1em;

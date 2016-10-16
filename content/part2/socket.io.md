@@ -39,9 +39,9 @@ Next, we need to add similar logic to the client app.
 Open the `index.html` file and modify the `script` tags below so that we also reference and make use of Socket.IO. We can do this by adding one more script tag before our `app.js`script tag, so that it looks like this down there.
 
 ```html
-<script src="https://cdn.socket.io/socket.io-1.5.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/app.js"></script>
+<script src="app.js"></script>
 ```
 
 ## Step 4
