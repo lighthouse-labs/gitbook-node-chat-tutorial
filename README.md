@@ -1,6 +1,8 @@
 # Introduction
 
-Hello and thank you for joining us for this JavaScript workshop at Lighthouse Labs.
+![Coding for Noobs](images/coding-for-noobs.png)
+
+Hello and thank you for joining us for the Coding for Noobs workshop.
 
 My name is David VanDusen, Web bootcamp instructor at Lighthouse Labs, and your instructor today. 
 

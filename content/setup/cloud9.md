@@ -8,12 +8,8 @@ This is big hurdle especially when getting started with coding. Cloud9 gives us 
 
 ## Sign up
 
-So with that said, go ahead and [sign up for a c9 account on their website](https://c9.io/web/sign-up/free). **Use your github profile** to sign up.
+We're all going to use the same c9 account to save us time signing up for our own accounts. Login with the credentials you were shown.
 
-![screenshot](http://d.pr/i/T611/3KkIT0na+)
-
-Once you've done that, create a new workspace titled "chat-app". You can keep it public and select "Blank" as the type.
-
-![screenshot](http://d.pr/i/9z1n/3MvoUudv+)
+Once you've done that, create a new workspace titled "chat-app-YOUR-NAME". You can keep it public and select "Blank" as the type.
 
 At this point c9 will open a new browser tab and launch the editor. You're all set to start working on our app!
