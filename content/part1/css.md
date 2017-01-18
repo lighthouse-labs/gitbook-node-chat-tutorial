@@ -40,7 +40,7 @@ body {
 main {
   background-color: white;
   margin: 20px auto;
-  width: 450px;
+  width: 300px;
 }
 ```
 
