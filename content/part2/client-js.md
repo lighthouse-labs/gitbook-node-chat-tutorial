@@ -59,31 +59,22 @@ Save the file, and refresh the HTML page. Put some text into the second field an
 
 The code above isn't doing too much, but it does need to be reviewed before we move on.
 
-First, we use `jQuery` using the `$` function, telling it that we want to target all `form` elements on the page. There is only one form element on the page and it is the one at the bottom which contains both input fields and the button.
+First, we use **jQuery** using the `$` function, telling it that we want to target all `form` elements on the page. There is only one form element on the page and it is the one at the bottom which contains both input fields and the button.
 
-Note how we don't use the `<`angle`>` brackets when targeting elements here, just like with CSS. Angle brackets are solely used to _define_ tags in the HTML page.
+Note how we don't use the `<`angle`>` brackets when targeting elements here, just like with CSS. Angle brackets are solely used to *define* tags in the HTML page.
 
 We then call/invoke another function called `submit` on that returned form element, saying that we want to be notified anytime that form is submitted.
 
-In order to be notified any time this happens, we pass in our own custom function into the `submit` function. That's right, `submit` is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the `(`parentheses`)`. They're not on the same line, but they are there.
+In order to be notified any time this happens, we pass in our own custom function into the `submit` function. That's right, `submit` is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the parentheses `()`. They're not on the same line, but they are there.
 
 This part may be a bit confusing but perhaps this annotated code can help you see it better.
 
-![screenshot](http://d.pr/i/1eAYn/2mERR8ql+)
+![Annotated code](/assets/annotated-alert.png)
 
 Otherwise, call over a mentor for explanation.
 
 Inside our function, the rest of the code is indented so that we know that it is within that function, just like we nest HTML tags with indentation. Make sure your code is indented correctly because improper indentation is a big source of confusion.
 
-This inside code is capturing the text value of the HTML element `id`'d as `m` and then passing it to `alert` so that we can see it.
+This inside code is capturing the text value of the HTML element with the ID`message` and then passing it to `alert` so that we can see it.
 
-Lastly, the `return false` is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.
-
-
-
-
-
-
-
-
-
+Lastly, the `return false` is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything.) This is common practice when adding custom behaviour to forms like we are doing here.
