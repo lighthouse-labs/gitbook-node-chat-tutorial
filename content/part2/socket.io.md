@@ -22,7 +22,7 @@ Run the following command in the terminal window to install it on the server.
 
 Now let's add some code in `server.js` that will use this library. This code block should be placed before/above `server.listen`.
 
-```js
+```javascript
 var io = require('socket.io')(server);
 
 io.on('connection', function (socket) {
@@ -50,7 +50,7 @@ Open `app.js`, our client-side JS code file and let's add some code to send and 
 
 Add the following code to the very top of the file.
 
-```js
+```javascript
 var socket = io();
 ```
 
@@ -60,19 +60,18 @@ This is saying that `socket` is now a reference to the SocketIO library.
 
 In that same file, replace the `alert` line from before with the following code:
 
-```js
+```javascript
   socket.emit('message', text);
-  $('#m').val('');
+  $('#message').val('');
 ```
 
 The code above says to emit the textual message to the server instead of performing our temporary `alert` behavior. The second line in the code simply clears the input so that another message can be typed by the same user.
 
 We're not done yet, we need to listen for messages that are received from the server and append them into the message list. Add the following code at the bottom of the file:
 
-```js
+```javascript
 socket.on('message', function (msg) {
-  var incomingMessage = $('<li>').text(msg);
-  $('#messages').append(incomingMessage);
+  $('<li>').text(msg).appendTo('#history');
 });
 ```
 
@@ -82,7 +81,7 @@ This part tells the browser that any time a message is received from the real ti
 
 The `app.js` file should look like this.
 
-```js
+```javascript
 var socket = io();
 
 $('form').submit(function () {
@@ -102,7 +101,7 @@ socket.on('message', function (msg) {
 
 The `server.js` file should look like this:
 
-```js
+```javascript
 var express = require('express');
 var app = express();
 
