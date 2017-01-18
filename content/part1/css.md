@@ -32,14 +32,13 @@ Note that if no changes are reflected in the webpage (upon refreshing the page) 
 
 ```css
 body {
-  background-color: slategrey;
+  background-color: white;
+  color: darkslategrey;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 main {
-  background-color: white;
-  margin: 20px auto;
-  width: 300px;
+  padding: 20px;
 }
 ```
 
@@ -53,11 +52,11 @@ The end result should look a little bit closer to what we're trying to get to.
 
 ## Step 5 - A challenge
 
-Add a few "list items" (for example `<li>DV says: hello</li>`) within the `<ol>` element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.
+Add a few "list items" (for example `<li>DV says: hey</li>`) within the `<ol>` element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.
 
 Now use CSS to try and make the page look closer to this.
 
-![final](http://d.pr/i/1k0TK/33fupKLm+)
+![TODO]()
 
 If you have time to spare, give it your own unique look. 
 
