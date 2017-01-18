@@ -1,44 +1,47 @@
 # Node (JavaScript on the server)!
 
-So far we've been building a web site with some static content and a bit of client-side interactivity.
+So far we've been building a website with some static content and a bit of client-side interactivity.
 
 It's time to take it up a notch and graduate to "Web application" status. Server-side app logic is what separates a site from an app.
 
 ## Step 1
 
-First, stop the server if it's running.
+Move all the "client" side files into their own folder called **client**.
 
-![screenshot](http://d.pr/i/18zDg/2QUFHpkd+)
-
-Let's then move all the "client" side files into their own folder called `client`.
-
-![screenshot](http://d.pr/i/1jj5s/2uE8HilK+)
+![Client folder](/assets/client-folder.png)
 
 ## Step 2
 
-Now let's add another JavaScript file to be run on the server side which will power the logic for our chat application. Call it `server.js` and put it at the top level (at the same level as the `client` folder.)
+Now let's add another JavaScript file to be run on the server side which will power the logic for our chat application. Call it **server.js** and put it at the top level (at the same level as the **client** folder.)
 
 In it, put this one test line of code, to print a message to the screen so we know that it is working.
 
-```js
+```javascript
 console.log('hello from our node script!');
 ```
 
-![screenshot](http://d.pr/i/1j4Jg/2F7WTbb6+)
+![Server test](/assets/server-test.png)
 
 ## Step 3
 
-Let's run it. We'll use the Node runner given to us by Cloud9 to make life easy here.
+Let's run it. Open up the **Terminal** app on MacOS or **cmd.exe** on Windows to get to a command prompt.
 
-![screenshot](http://d.pr/i/17Sx1/58mf36Nc+)
+Next you'll have to change the working directory to the one where your project files are. In the example below I used the commands:
 
-A new tab will open in the terminal panel at the bottom, which will say something very similar to:
-
-```bash
-Debugger listening on port 15454
-hello from our node script!
 ```
+cd Desktop
+cd Lighthouse\ Labs
+```
+
+Then to run the file I did the command:
+
+```
+node server.js
+```
+
+The output should look like this.
+
+![Terminal test](/assets/terminal-test.png)
 
 And there's our message, nice!
 
-You can click the red Stop button at this point.
