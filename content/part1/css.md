@@ -56,7 +56,7 @@ Add a few "list items" (for example `<li>DV says: hey</li>`) within the `<ol>` e
 
 Now use CSS to try and make the page look closer to this.
 
-![TODO]()
+![Example](/assets/example.png)
 
 If you have time to spare, give it your own unique look. 
 
