@@ -38,6 +38,7 @@ body {
 }
 
 main {
+  max-width: 450px;
   padding: 20px;
 }
 ```
