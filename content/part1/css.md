@@ -32,9 +32,8 @@ Note that if no changes are reflected in the webpage (upon refreshing the page) 
 
 ```css
 body {
-  background-color: lightgray;
-  color: slategrey;
-  font-family: 'Open Sans', sans-serif;
+  background-color: slategrey;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 main {
