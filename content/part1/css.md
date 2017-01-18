@@ -8,23 +8,23 @@ CSS stands for Cascading Stylesheets. The key word here is "style", referring to
 
 ## Step 1
 
-Let's prepare our HTML document to _link_ a stylesheet (`.css`) file to it. 
+Let's prepare our HTML document to _link_ a stylesheet (**.css**) file to it. 
 
-Add the following HTML tag to the top of your `index.html` file.
+Add the following HTML tag to the top of your **index.html** file and save it.
 
 ```html
 <link rel="stylesheet" href="style.css">
 ```
 
-When the HTML file is loaded again, it will ask the browser to fetch another file (called `style.css`) from the web server and apply its rules to our HTML page. 
+When the HTML file is loaded again, it will ask the browser to fetch another file (called **style.css**) from the Web server and apply its rules to our HTML page.
 
 ## Step 2
 
-Oops, we don't even have that file in our project, let's add it the same way we created the `index.html` file.
+Oops, we don't even have that file in our project, let's add it the same way we created the **index.html** file.
 
-![screenshot](http://d.pr/i/1gxkO/3zpwIs1q+)
 
-Call it `style.css`.
+
+Make sure to call it **style.css** exactly as it is in the tag.
 
 ## Step 3
 
