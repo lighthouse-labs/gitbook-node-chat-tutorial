@@ -35,9 +35,12 @@ body {
   background-color: white;
   color: #303030;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 20px;
 }
 
 main {
+  background-color: #f0f0f0;
+  margin: 20px auto;
   max-width: 450px;
   padding: 20px;
 }
