@@ -1,59 +1,59 @@
 # JavaScript in the Browser
 
-Let's add some behavior to your web page so it works. That's where JavaScript (JS) comes in.
+Let's add some behaviour to your webpage so it actually does something useful. That's where JavaScript comes in.
 
 ## Step 1
 
-Much like with the CSS, we need to link our new `.js` code with our web page, our `.html` content file.
+Much like with the CSS, we need to link our new **.js** code with our web page, our **.html** file.
 
-Add the following tags to the bottom of the HTML file.
+Add the following tags to the *bottom* of the HTML file.
 
 ```html
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script src="app.js"></script>
 ```
 
-Now whenever you refresh/load the web page, it will reference two separate JS files for the browser to download (at the end), one of which is external (3rd party) to our application. This 3rd party library called jQuery is there to make life easier. We don't _need_ it, but with it we can write less code. This is why most websites use jQuery or other libraries like it.
+Now whenever you refresh/load the web page, it will reference two separate JS files for the browser to download (at the end), one of which is external (3rd party) to our application. This 3rd party library called jQuery is there to make life easier. We don't **need** it, but with it we can write less code. This is why most websites use jQuery or other libraries like it.
 
 ## Step 2
 
-The second file `app.js` needs to exist in our workspace, so let's create it just like you created `style.css` earlier.
+The second file **app.js** needs to exist in our workspace, so let's create it just like you created **style.css** earlier.
 
 It will be empty at first, but let's add the following code into it.
 
-```js
+```javascript
 alert('hello from the JS file');
 ```
 
-Save the file and refresh the (probably already running) HTML file in your other browser tab. Upon page load, you should see an alert pop up that says your message.
+Save the file and refresh the HTML file in your browser. When the page loads you should see an alert pop up that says your message.
 
-![screenshot](http://d.pr/i/1iOIM/1t9ilpa9+)
+![Alert](/assets/alert.png)
 
 `alert` is a built in function that all browsers support, even though they may look slightly different on each browser. I'm guessing it's not your first time seeing one, so now you know how they happen.
 
-Any time you call a function in JS you have to use `(parentheses)` after it, and within the brackets you put in data that you want to give the function. Programming functions are much like math functions. They take in values and can do some crunching and give you back a computed value, or in this case, give you back some behavior like popup that message you passed into it.
+Any time you call a function in JS you have to use parentheses `()` after it, and within the brackets you put in data that you want to give the function. Programming functions are much like math functions. They take in values and can do some crunching and give you back a computed value, or in this case, give you back some behaviour like popup that message you passed into it.
 
-Every single pre-defined JS function has documentation, so we can look up details about how they work. [Case in point](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert).
+Every single predefined JavaScript function has documentation, so we can look up details about how they work. [Case in point](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert).
 
 Very soon, we'll create our own function while using other functions. It's going to get a bit more real, so hold on to your suspenders!
 
 ## Step 3
 
-Remove the `alert` code and let's get down to business. We want to make it so when our `<form>` is submitted (via enter key or by clicking the send button) we read the text content of the input field (`id`'d as `m` in the HTML file) and do something with it. For now let's just `alert` it.
+**Remove the `alert` code** and let's get down to business. We want to make it so when our `<form>` is submitted (via enter key or by clicking the send button) we read the text content of the input field (with `id="message"` in the HTML file) and do something with it. For now let's just `alert` it.
 
-```js
+```javascript
 $('form').submit(function () {
-  var text = $('#m').val();
+  var text = $('#message').val();
   alert(text);
   return false;
 });
 ```
 
-Remember, type that out yourself. Don't copy paste it. Assuming you started and closed all the brackets, quotes, and semicolons correctly, it should add some interesting behavior to the page. 
+Remember, type that out yourself. Don't copy paste it. Assuming you started and closed all the brackets, quotes, and semicolons correctly, it should add some interesting behaviour to the page. 
 
 Save the file, and refresh the HTML page. Put some text into the second field and hit Enter or click Send. You should see it echoed back to you in an alert message. If not, review or otherwise seek help.
 
-![example](http://d.pr/i/1dJ6W/mKRvFgKR+)
+![Working alert](/assets/working-alert.png)
 
 ### Explanation
 
