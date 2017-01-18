@@ -22,38 +22,28 @@ When the HTML file is loaded again, it will ask the browser to fetch another fil
 
 Oops, we don't even have that file in our project, let's add it the same way we created the **index.html** file.
 
-
-
 Make sure to call it **style.css** exactly as it is in the tag.
 
 ## Step 3
 
-Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).
+Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once.)
 
-Note: if no changes are reflected in the Web page (upon refreshing the page) then please confirm that your `<link>` tag is correct. Still a problem? Ask for help from your peers or a mentor.
+Note that if no changes are reflected in the webpage (upon refreshing the page) then please confirm that your `<link>` tag is correct. Still a problem? Ask for help from your peers or a mentor.
 
 ```css
-* { 
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
-}
-
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #244751;
   background-color: lightgray;
+  font-family: 'Open Sans', sans-serif;
+  color: slategrey;
+  background-color: lightgray;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
-  width: 450px;
-  margin: 20px auto;
   background-color: white;
-  border: 1px solid black;
+  width: 450px;
 }
 ```
-
-The first section with the `*` is about making CSS act more predictably. Every browser has slightly different default styling. Don't worry about it too much, it's a bit of _a hack_.
 
 ## Step 4
 
