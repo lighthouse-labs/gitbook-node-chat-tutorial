@@ -7,7 +7,7 @@
 * [Part I - HTML & CSS](content/part1/README.md)
     * [HTML](content/part1/html.md)
     * [CSS](content/part1/css.md)
-    * [CSS \(Solution!\)](content/part1/final-css.md)
+    * [CSS \(Example\)](content/part1/final-css.md)
 * [Part II - JavaScript](content/part2/README.md)
     * [Client Side](content/part2/client-js.md)
     * [Node](content/part2/node.md)

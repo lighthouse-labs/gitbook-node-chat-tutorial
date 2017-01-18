@@ -56,7 +56,7 @@ The end result should look a little bit closer to what we're trying to get to.
 
 ## Step 5 - A challenge
 
-Add a few "list items" (for example `<li>DV says: hey</li>`) within the `<ol>` element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.
+Add a few "list items" (for example `<li>DV says: hey</li>`) inside of the `<ol>` element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.
 
 Now use CSS to try and make the page look closer to this.
 

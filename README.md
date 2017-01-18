@@ -22,7 +22,4 @@ The objective is not to fully understand every line of code, but to understand s
 
 The finished app that we'll be building in just a few hours today will look and feel much like this.
 
-![Example](/assets/example.png)
-
-![example](http://d.pr/i/1k0TK/33fupKLm+)
-
+![Example](/assets/example-cropped.png)
