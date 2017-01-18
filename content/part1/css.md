@@ -33,7 +33,7 @@ Note that if no changes are reflected in the webpage (upon refreshing the page) 
 ```css
 body {
   background-color: white;
-  color: darkslategrey;
+  color: #303030;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
