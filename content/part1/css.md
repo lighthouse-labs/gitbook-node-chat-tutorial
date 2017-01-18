@@ -50,7 +50,7 @@ I'm _not_ going to explain to you what this code is doing and how it's working. 
 
 Also, feel free to Google terms like "[CSS background color](https://google.com/?q=CSS+background+color)".
 
-The end result should look like something a bit closer to what we're trying to get to.
+The end result should look a little bit closer to what we're trying to get to.
 
 ## Step 5 - A challenge
 
