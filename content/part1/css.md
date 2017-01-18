@@ -33,14 +33,13 @@ Note that if no changes are reflected in the webpage (upon refreshing the page) 
 ```css
 body {
   background-color: lightgray;
-  font-family: 'Open Sans', sans-serif;
   color: slategrey;
-  background-color: lightgray;
   font-family: 'Open Sans', sans-serif;
 }
 
 main {
   background-color: white;
+  margin: 20px auto;
   width: 450px;
 }
 ```
