@@ -21,3 +21,7 @@ One way to do this is to create an empty [array](https://developer.mozilla.org/e
 Then, whenever a message is received on the server, it can [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) (append) that message string into the array.
 
 Then whenever a user (new socket) connects to the server, (on `connection`) the server could iterate over all the messages in the array and `emit` them to that new client/socket.
+
+## 4. Deploy
+
+You can use another free technology called Heroku to make your app available on the Internet for anyone to use. There's a tutorial that will walk you through the process here: <https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction>.
