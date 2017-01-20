@@ -132,8 +132,8 @@ Make sure all your files are saved, and the Node server is still running, and gi
 
 That's right, it works! That's all it took. The basic chat functionality works. Have your peer go to the same URL that you're on and you guys should be able to communicate!
 
-Note: newcomers to the chat room can't see any previous messages (message history). We would have to implement that functionality for it to work that way.
+Note: newcomers to the chat room can't see any previous messages. We would have to implement that functionality for it to work that way.
 
 ## Screenshot
 
-![screenshot](http://d.pr/i/15CQJ/4WxT350g+)
+![Finished?](/assets/finished.png)
