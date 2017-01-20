@@ -4,11 +4,11 @@ You may have noticed some bugs and broken features with this app.
 
 ## 1. Initial field - Part I
 
-The name/initial input field (the first input box) is not being used at all. Modify the `app.js` so that it sends (emits) the text as something like `"KV says: hello"` where `"KV"` is from the first input field (with `id="you"`) and `"hello"` is from the message field.
+The initials input field (the first input box) is not being used at all. Modify the **app.js** so that it sends (emits) the text as something like `"DV says: hello"` where `"DV"` is from the first input field (with `id="initials"`) and `"hello"` is from the message field.
 
 ## 2. Initial field - Part II
 
-The name/initial input field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.
+The initials input field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.
 
 Hint: Google "html input field maximum length" for a convenient HTML attribute that can be added to your HTML file.
 
