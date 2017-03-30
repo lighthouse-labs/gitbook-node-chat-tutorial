@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>CSS · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CSS · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -60,7 +60,7 @@
     <link rel="next" href="final-css.html" />
     
     
-    <link rel="prev" href="dev-tools.html" />
+    <link rel="prev" href="html.html" />
     
 
     </head>
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
             
-                <a href="../setup/github.html">
+                <a href="../setup/cloud9.html">
             
                     
-                    Github
+                    Brackets
             
                 </a>
             
@@ -142,12 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/nodejs.html">
             
-                <a href="../setup/cloud9.html">
+                <a href="../setup/nodejs.html">
             
                     
-                    Cloud9
+                    Node.js
             
                 </a>
             
@@ -187,20 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="dev-tools.html">
-            
-                <a href="dev-tools.html">
-            
-                    
-                    Dev Tools
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.3.3" data-path="css.html">
+        <li class="chapter active" data-level="1.3.2" data-path="css.html">
             
                 <a href="css.html">
             
@@ -213,12 +200,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="final-css.html">
+        <li class="chapter " data-level="1.3.3" data-path="final-css.html">
             
                 <a href="final-css.html">
             
                     
-                    CSS (Solution!)
+                    CSS (Example)
             
                 </a>
             
@@ -289,7 +276,7 @@
                 <a href="../part2/socket.io.html">
             
                     
-                    Socket IO
+                    Socket.IO
             
                 </a>
             
@@ -373,40 +360,59 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="css">CSS</h1><p>If HTML is the bread and butter of a web page, then CSS is our butter knife.</p><p>Why is CSS the knife? Well, it controls <em>what goes where</em>. Using CSS we declare how we&apos;d like the content (HTML) to be presented.</p><p>CSS stands for Cascading Stylesheets. The key word here is &quot;style&quot;, referring to the way something <em>looks</em>.</p><h2 id="step-1">Step 1</h2><p>Let&apos;s prepare our HTML document to <em>link</em> a stylesheet (<code>.css</code>) file to it.</p><p>Add the following HTML tag to the top of your <code>index.html</code> file.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span></code></pre>
-<p>When the HTML file is loaded again, it will ask the browser to fetch another file (called <code>style.css</code>) from the web server and apply its rules to our HTML page.</p><h2 id="step-2">Step 2</h2><p>Oops, we don&apos;t even have that file in our project, let&apos;s add it the same way we created the <code>index.html</code> file.</p><p><img alt="screenshot" src="http://d.pr/i/1gxkO/3zpwIs1q+"></p><p>Call it <code>style.css</code>.</p><h2 id="step-3">Step 3</h2><p>Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once).</p><p>Note: if no changes are reflected in the Web page (upon refreshing the page) then please confirm that your <code>&lt;link&gt;</code> tag is correct. Still a problem? Ask for help from your peers or a mentor.</p><pre><code class="lang-css">* { 
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; 
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>; 
-  <span class="hljs-attribute">box-sizing</span>: border-box; 
-}
-
-<span class="hljs-selector-tag">body</span> {
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Roboto Condensed&apos;</span>, sans-serif;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#244751</span>;
-  <span class="hljs-attribute">background-color</span>: lightgray;
+                                <h1 id="css">CSS</h1>
+<p>If HTML is the bread and butter of a web page, then CSS is our butter knife.</p>
+<p>Why is CSS the knife? Well, it controls <em>what goes where</em>. Using CSS we declare how we&apos;d like the content (HTML) to be presented.</p>
+<p>CSS stands for Cascading Stylesheets. The key word here is &quot;style&quot;, referring to the way something <em>looks</em>.</p>
+<h2 id="step-1">Step 1</h2>
+<p>Let&apos;s prepare our HTML document to <em>link</em> a stylesheet (<strong>.css</strong>) file to it. </p>
+<p>Add the following HTML tag to the top of your <strong>index.html</strong> file and save it.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+</code></pre>
+<p>When the HTML file is loaded again, it will ask the browser to fetch another file (called <strong>style.css</strong>) from the Web server and apply its rules to our HTML page.</p>
+<h2 id="step-2">Step 2</h2>
+<p>Oops, we don&apos;t even have that file in our project, let&apos;s add it the same way we created the <strong>index.html</strong> file.</p>
+<p>Make sure to call it <strong>style.css</strong> exactly as it is in the tag.</p>
+<h2 id="step-3">Step 3</h2>
+<p>Inside the empty CSS file, add the code provided below. I would suggest that you type this out and do it incrementally (save and refresh the page to see the change after each major section instead of typing it all out at once.)</p>
+<p>Note that if no changes are reflected in the webpage (upon refreshing the page) then please confirm that your <code>&lt;link&gt;</code> tag is correct. Still a problem? Ask for help from your peers or a mentor.</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-color</span>: white;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#303030</span>;
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Helvetica Neue&apos;</span>, Arial, sans-serif;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span>;
 }
 
 <span class="hljs-selector-tag">main</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">450px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f0f0f0</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> auto;
-  <span class="hljs-attribute">background-color</span>: white;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
-}</code></pre>
-<p>The first section with the <code>*</code> is about making CSS act more predictably. Every browser has slightly different default styling. Don&apos;t worry about it too much, it&apos;s a bit of <em>a hack</em>.</p><h2 id="step-4">Step 4</h2><p>I&apos;m <em>not</em> going to explain to you what this code is doing and how it&apos;s working. Discuss among yourself and try and use your powers of reasoning, critical thinking and experimentation to solve the mysteries of CSS syntax. Look for patterns to help identify conventions and rules. HTML has its own completely different set of rules from CSS, but all languages have rules, and computer languages need strict rules. Use this to your benefit to reason toward conclusions.</p><p>Also, feel free to Google terms like &quot;<a href="https://google.com/?q=CSS+background+color" target="_blank">CSS background color</a>&quot;.</p><p>The end result should look like something a bit closer to what we&apos;re trying to get to.</p><h2 id="step-5---a-challenge">Step 5 - A challenge</h2><p>Add a few &quot;list items&quot; (for example <code>&lt;li&gt;DV says: hello&lt;/li&gt;</code>) within the <code>&lt;ol&gt;</code> element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.</p><p>Now use CSS to try and make the page look closer to this.</p><p><img alt="final" src="http://d.pr/i/1k0TK/33fupKLm+"></p><p>If you have time to spare, give it your own unique look.</p><h3 id="properties">Properties</h3><p>Here is a list of CSS properties that you may want to try.</p><ul><li><code>width</code>
-</li>
-<li><code>background-color</code>
-</li>
-<li><code>padding</code>
-</li>
-<li><code>margin</code>
-</li>
-<li><code>border</code>
-</li>
-<li><code>border-radius</code>
-</li>
-<li><code>font-size</code>
-</li></ul>
-<p>Feel free to Google them along with the keyword &quot;CSS&quot; to learn by example. StackOverflow, w3schools and MDN are all great resources that you&apos;ll likely end up on naturally. They tend to be highest in results.</p><p>You&apos;ll likely need a few more CSS properties. Take your time. :)</p>
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">450px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+}
+</code></pre>
+<h2 id="step-4">Step 4</h2>
+<p>I&apos;m <em>not</em> going to explain to you what this code is doing and how it&apos;s working. Discuss among yourself and try and use your powers of reasoning, critical thinking and experimentation to solve the mysteries of CSS syntax. Look for patterns to help identify conventions and rules. HTML has its own completely different set of rules from CSS, but all languages have rules, and computer languages need strict rules. Use this to your benefit to reason toward conclusions.</p>
+<p>Also, feel free to Google terms like &quot;<a href="https://google.com/?q=CSS+background+color" target="_blank">CSS background color</a>&quot;.</p>
+<p>The end result should look a little bit closer to what we&apos;re trying to get to.</p>
+<h2 id="step-5---a-challenge">Step 5 - A challenge</h2>
+<p>Add a few &quot;list items&quot; (for example <code>&lt;li&gt;DV says: hey&lt;/li&gt;</code>) inside of the <code>&lt;ol&gt;</code> element so that you have some fake messages that can be styled. Add at least four of these. They can be removed later when we get into JavaScript.</p>
+<p>Now use CSS to try and make the page look closer to this.</p>
+<p><img src="../../assets/example.png" alt="Example"></p>
+<p>If you have time to spare, give it your own unique look. </p>
+<h3 id="properties">Properties</h3>
+<p>Here is a list of CSS properties that you may want to try.</p>
+<ul>
+<li><code>width</code></li>
+<li><code>background-color</code></li>
+<li><code>padding</code></li>
+<li><code>margin</code></li>
+<li><code>border</code></li>
+<li><code>border-radius</code></li>
+<li><code>font-size</code></li>
+</ul>
+<p>Feel free to Google them along with the keyword &quot;CSS&quot; to learn by example. StackOverflow, w3schools and MDN are all great resources that you&apos;ll likely end up on naturally. They tend to be highest in results. </p>
+<p>You&apos;ll likely need a few more CSS properties. Take your time. :)</p>
+
                                 
                                 </section>
                             
@@ -433,12 +439,12 @@
 
             
                 
-                <a href="dev-tools.html" class="navigation navigation-prev " aria-label="Previous page: Dev Tools">
+                <a href="html.html" class="navigation navigation-prev " aria-label="Previous page: HTML">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="final-css.html" class="navigation navigation-next " aria-label="Next page: CSS (Solution!)">
+                <a href="final-css.html" class="navigation navigation-next " aria-label="Next page: CSS (Example)">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -449,7 +455,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.3.3","depth":2,"next":{"title":"CSS (Solution!)","level":"1.3.4","depth":2,"path":"content/part1/final-css.md","ref":"content/part1/final-css.md","articles":[]},"previous":{"title":"Dev Tools","level":"1.3.2","depth":2,"path":"content/part1/dev-tools.md","ref":"content/part1/dev-tools.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part1/css.md","mtime":"2016-10-14T02:21:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-30T23:48:29.019Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.3.2","depth":2,"next":{"title":"CSS (Example)","level":"1.3.3","depth":2,"path":"content/part1/final-css.md","ref":"content/part1/final-css.md","articles":[]},"previous":{"title":"HTML","level":"1.3.1","depth":2,"path":"content/part1/html.md","ref":"content/part1/html.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part1/css.md","mtime":"2017-03-30T17:08:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T17:49:42.243Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

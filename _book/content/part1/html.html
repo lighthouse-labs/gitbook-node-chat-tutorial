@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>HTML · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HTML · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="dev-tools.html" />
+    <link rel="next" href="css.html" />
     
     
     <link rel="prev" href="./" />
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
             
-                <a href="../setup/github.html">
+                <a href="../setup/cloud9.html">
             
                     
-                    Github
+                    Brackets
             
                 </a>
             
@@ -142,12 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/nodejs.html">
             
-                <a href="../setup/cloud9.html">
+                <a href="../setup/nodejs.html">
             
                     
-                    Cloud9
+                    Node.js
             
                 </a>
             
@@ -187,20 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="dev-tools.html">
-            
-                <a href="dev-tools.html">
-            
-                    
-                    Dev Tools
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="css.html">
+        <li class="chapter " data-level="1.3.2" data-path="css.html">
             
                 <a href="css.html">
             
@@ -213,12 +200,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="final-css.html">
+        <li class="chapter " data-level="1.3.3" data-path="final-css.html">
             
                 <a href="final-css.html">
             
                     
-                    CSS (Solution!)
+                    CSS (Example)
             
                 </a>
             
@@ -289,7 +276,7 @@
                 <a href="../part2/socket.io.html">
             
                     
-                    Socket IO
+                    Socket.IO
             
                 </a>
             
@@ -373,25 +360,63 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html">HTML</h1><p>HTML is short for Hypertext Markup Language. What that means is that we use &quot;markup&quot; text to describe the structure of the content in our Web page. It&apos;s the bread and butter of every web site you&apos;ve every visited.</p><p>Let&apos;s use it to build our app.</p><h2 id="step-1">Step 1</h2><p>Create an new file in your project called <code>index.html</code> by right clicking the top level folder in the tree view on the left hand side.</p><p><img alt="example" src="http://d.pr/i/WClH/2cnEeYM7+"></p><p>Open the file and add the following html code into it.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>hello, world<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre>
-<p>Save the file using <kbd>cmd</kbd> + <kbd>s</kbd> just like you would in any other text editor.</p><p>With this file selected on the left side, click the green &quot;Run&quot; button. You&apos;ll see a terminal output like the one shown below. Copy the highlighted URL and paste it into a new browser tab.</p><p><img alt="example" src="http://d.pr/i/6Ffy/282MJmg1+"></p><p>And that&apos;s it &#x2014; you just built a Web page!</p><p>Notice the URL, you can even have your team member put that URL in their browser and see the same results. It&apos;s online too?! Thank you Cloud9!</p><h2 id="step-2">Step 2</h2><p>Let&apos;s build out the &quot;markup&quot; (structure) of our web page so it looks more like our goal, which is something like this.</p><p><img alt="example" src="http://d.pr/i/1k0TK/33fupKLm+"></p><p>Here&apos;s a description of the what it contains.</p><ol><li>A main area (the white, rounded box) 
-</li>
-<li>Inside that there is a message box
-</li>
-<li>Inside the message box is a vertical list of messages with zebra-striping (alternating background colours)
-</li>
-<li>Below that is a form containing two input fields and a &quot;Send&quot; button. The first input field is for two letter initials of who is sending the message and the second is the message itself.
-</li></ol>
-<p>The initial HTML for this can be something like the following. Replace the content of <code>index.html</code> with this code. Please type it out instead of using copy and paste.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;messages&quot;</span>&gt;</span>
+                                <h1 id="html">HTML</h1>
+<p>HTML is the most fundamental language used on the Web. With it, we add information into documents that explain how they are linked together &#x2014; that&apos;s how the Web works!</p>
+<p>Now let&apos;s use it to build our app.</p>
+<h2 id="step-1">Step 1</h2>
+<p>Create a folder on your computer to put the files for this project. A good name for the folder might be <strong>Lighthouse Labs</strong>. Then go to <strong>File &gt; Open Folder...</strong> and select your new folder. </p>
+<p><img src="../../assets/open-folder.png" alt="Open Folder"></p>
+<p>You should now see an empty workspace ready for us to create our project in.</p>
+<p>Create an new file in your project called <strong>index.html</strong> by right clicking the grey area on the left hand side.</p>
+<p><img src="../../assets/new-file.png" alt="New File"></p>
+<p><img src="../../assets/index.html.png" alt="index.html"></p>
+<p>Open the file and add the following html code into it.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>hello, world<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<p>It should look like this.</p>
+<p><img src="../../assets/hello-world.png" alt="hello, world"></p>
+<p>Save the file and then navigate to your project folder and choose to open the <strong>index.html</strong> file in your Web browser. You&apos;ll get something like this.</p>
+<p><img src="../../assets/hello-browser.png" alt="Hello, Chrome"></p>
+<p>And that&apos;s it &#x2014; you just built a Web page!</p>
+<h2 id="step-2">Step 2</h2>
+<p>Let&apos;s build out the &quot;markup&quot; (structure) of our web page so it looks more like our goal, which is something like this.</p>
+<p><img src="." alt="TODO"></p>
+<p>Here&apos;s a description of the what it contains.</p>
+<ol>
+<li>A main area</li>
+<li>Inside that there is the message history box</li>
+<li>Inside the message history box is a list of messages</li>
+<li>Below that is a form containing two input fields and a &quot;Send&quot; button. The first input field is for the initials of the person sending the message and the second is the message itself.</li>
+</ol>
+<p>The initial HTML for this can be something like the following. Replace the content of <strong>index.html</strong> with this code. Please type it out instead of using copy and paste.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;history&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;you&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;m&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;initials&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;message&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Send<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></code></pre>
-<p>Note a few important properties of HTML here.</p><h3 id="a-tags-define-elements">A. Tags define elements</h3><p>Tags that look like <code>&lt;this&gt;</code> have <em>meaning</em>. Other examples of tags would be <code>&lt;p&gt;</code> for a paragraph and <code>&lt;h1&gt;</code> for a first level heading.</p><p>They are closed by an accompanying closing tag, for example: <code>&lt;/p&gt;</code> or <code>&lt;/h1&gt;</code>.</p><h3 id="b-nesting">B. Nesting</h3><p>We indent our code when that content is inside a tag (between opening and closing tags) so that it&apos;s easy on the eyes and we can understand what is going on.</p><h3 id="c-ids">C. IDs</h3><p>We give <code>id</code>s to certain elements so that they can be quickly referenced later.</p><p>This <code>id=&quot;some-identifier&quot;</code> key-value pair that is part of an HTML tag is called an HTML attribute. Elements can have zero or more attributes. Attributes are cool and come in handy later.</p><h2 id="step-3">Step 3</h2><p>Let&apos;s save and refresh the other tab where the <code>index.html</code> file is open and being displayed to the user. It will hopefully look a lot like our final product.</p><p><img alt="example" src="http://d.pr/i/ZHBD/LlgXPLjH+"></p><p>Hm...not quite. Why does it appear this way and not like the example?</p><p>We have provided the browser with a good understanding of the <em>structure</em> of our Web page, but not how to present it. The presentation rules are defined using another language called CSS.</p><h2 id="questions">Questions?</h2><p>If you have any questions about the above, flag me or another mentor so that we can answer any questions you may have.</p><p>Otherwise, it&apos;s time to move on to the next section.</p>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+</code></pre>
+<p>Note a few important properties of HTML here.</p>
+<h3 id="tags-define-elements">Tags define elements</h3>
+<p>Tags look like <code>&lt;this&gt;</code> and they have <em>meaning</em>. Examples of tags are <code>&lt;p&gt;</code> which means &quot;paragraph&quot; and <code>&lt;h1&gt;</code> means a &quot;first level heading&quot;.</p>
+<p>Most tags need an accompanying closing tag, for example <code>&lt;/p&gt;</code> or <code>&lt;/h1&gt;</code> after the text that goes inside the paragraph or heading.</p>
+<h3 id="nesting">Nesting</h3>
+<p>We indent our code when that content is <em>inside</em> a tag (between opening and closing tags) so that it&apos;s easy to understand what code is inside other code. </p>
+<h3 id="ids">IDs</h3>
+<p>We give <code>id</code>&apos;s to certain elements so that they can be quickly referenced later.</p>
+<p>This <code>id=&quot;something&quot;</code> key-value pair that is part of an HTML tag is called an HTML attribute. Elements can have zero or more attributes. Attributes are cool and come in handy later.</p>
+<h2 id="step-3">Step 3</h2>
+<p>Let&apos;s save and refresh the browser tab where the <strong>index.html</strong> file is open. It will hopefully look a lot like our final product.</p>
+<p><img src="../../assets/no-styles.png" alt="No style"></p>
+<p>Hm...not quite. Why does it appear this way and not like the example? </p>
+<p>We have provided the browser with a good understanding of the <em>structure</em> of our Web page, but not how to present it. The presentation rules are defined using another language called CSS.</p>
+<h2 id="questions">Questions?</h2>
+<p>If you have any questions about the above, flag me or another mentor so that we can answer any questions you may have.</p>
+<p>Otherwise, it&apos;s time to move on to the next section.</p>
+
                                 
                                 </section>
                             
@@ -423,7 +448,7 @@
                 </a>
                 
                 
-                <a href="dev-tools.html" class="navigation navigation-next " aria-label="Next page: Dev Tools">
+                <a href="css.html" class="navigation navigation-next " aria-label="Next page: CSS">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -434,7 +459,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.3.1","depth":2,"next":{"title":"Dev Tools","level":"1.3.2","depth":2,"path":"content/part1/dev-tools.md","ref":"content/part1/dev-tools.md","articles":[]},"previous":{"title":"Part I - HTML & CSS","level":"1.3","depth":1,"path":"content/part1/README.md","ref":"content/part1/README.md","articles":[{"title":"HTML","level":"1.3.1","depth":2,"path":"content/part1/html.md","ref":"content/part1/html.md","articles":[]},{"title":"Dev Tools","level":"1.3.2","depth":2,"path":"content/part1/dev-tools.md","ref":"content/part1/dev-tools.md","articles":[]},{"title":"CSS","level":"1.3.3","depth":2,"path":"content/part1/css.md","ref":"content/part1/css.md","articles":[]},{"title":"CSS (Solution!)","level":"1.3.4","depth":2,"path":"content/part1/final-css.md","ref":"content/part1/final-css.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part1/html.md","mtime":"2016-10-14T01:54:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-30T23:48:29.019Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.3.1","depth":2,"next":{"title":"CSS","level":"1.3.2","depth":2,"path":"content/part1/css.md","ref":"content/part1/css.md","articles":[]},"previous":{"title":"Part I - HTML & CSS","level":"1.3","depth":1,"path":"content/part1/README.md","ref":"content/part1/README.md","articles":[{"title":"HTML","level":"1.3.1","depth":2,"path":"content/part1/html.md","ref":"content/part1/html.md","articles":[]},{"title":"CSS","level":"1.3.2","depth":2,"path":"content/part1/css.md","ref":"content/part1/css.md","articles":[]},{"title":"CSS (Example)","level":"1.3.3","depth":2,"path":"content/part1/final-css.md","ref":"content/part1/final-css.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part1/html.md","mtime":"2017-03-30T17:08:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T17:49:42.243Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

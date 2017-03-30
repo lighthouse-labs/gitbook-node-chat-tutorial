@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Part III - Enhancements (Stretch) · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Part III - Enhancements (Stretch) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
             
-                <a href="../setup/github.html">
+                <a href="../setup/cloud9.html">
             
                     
-                    Github
+                    Brackets
             
                 </a>
             
@@ -142,12 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/nodejs.html">
             
-                <a href="../setup/cloud9.html">
+                <a href="../setup/nodejs.html">
             
                     
-                    Cloud9
+                    Node.js
             
                 </a>
             
@@ -187,20 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../part1/dev-tools.html">
-            
-                <a href="../part1/dev-tools.html">
-            
-                    
-                    Dev Tools
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="../part1/css.html">
+        <li class="chapter " data-level="1.3.2" data-path="../part1/css.html">
             
                 <a href="../part1/css.html">
             
@@ -213,12 +200,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../part1/final-css.html">
+        <li class="chapter " data-level="1.3.3" data-path="../part1/final-css.html">
             
                 <a href="../part1/final-css.html">
             
                     
-                    CSS (Solution!)
+                    CSS (Example)
             
                 </a>
             
@@ -289,7 +276,7 @@
                 <a href="../part2/socket.io.html">
             
                     
-                    Socket IO
+                    Socket.IO
             
                 </a>
             
@@ -373,7 +360,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="enhancements-as-challenges-stretch">Enhancements as Challenges (Stretch)</h1><p>You may have noticed some bugs and broken features with this app.</p><h2 id="1-initial-field---part-i">1. Initial field - Part I</h2><p>The name/initial input field (the first input box) is not being used at all. Modify the <code>app.js</code> so that it sends (emits) the text as something like <code>&quot;KV says: hello&quot;</code> where <code>&quot;KV&quot;</code> is from the first input field (with <code>id=&quot;you&quot;</code>) and <code>&quot;hello&quot;</code> is from the message field.</p><h2 id="2-initial-field---part-ii">2. Initial field - Part II</h2><p>The name/initial input field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.</p><p>Hint: Google &quot;html input field maximum length&quot; for a convenient HTML attribute that can be added to your HTML file.</p><h2 id="3-list-of-messages">3. List of Messages</h2><p>It would be nice to see the message history on the server anytime you join the chat room. Unfortunately, we don&apos;t keep/store a message history on the server at all.</p><p>One way to do this is to create an empty <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">array</a> that stores the messages.</p><p>Then, whenever a message is received on the server, it can <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">push</a> (append) that message string into the array.</p><p>Then whenever a user (new socket) connects to the server, (on <code>connection</code>) the server could iterate over all the messages in the array and <code>emit</code> them to that new client/socket.</p>
+                                <h1 id="enhancements-as-challenges-stretch">Enhancements as Challenges (Stretch)</h1>
+<p>You may have noticed some bugs and broken features with this app.</p>
+<h2 id="1-initial-field---part-i">1. Initial field - Part I</h2>
+<p>The initials input field (the first input box) is not being used at all. Modify the <strong>app.js</strong> so that it sends (emits) the text as something like <code>&quot;DV says: hello&quot;</code> where <code>&quot;DV&quot;</code> is from the first input field (with <code>id=&quot;initials&quot;</code>) and <code>&quot;hello&quot;</code> is from the message field.</p>
+<h2 id="2-initial-field---part-ii">2. Initial field - Part II</h2>
+<p>The initials input field is actually meant to be 2 letter initials only. Make it so only a maximum of two characters can be entered into that field.</p>
+<p>Hint: Google &quot;html input field maximum length&quot; for a convenient HTML attribute that can be added to your HTML file.</p>
+<h2 id="3-list-of-messages">3. List of Messages</h2>
+<p>It would be nice to see the message history on the server anytime you join the chat room. Unfortunately, we don&apos;t keep/store a message history on the server at all. </p>
+<p>One way to do this is to create an empty <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">array</a> that stores the messages. </p>
+<p>Then, whenever a message is received on the server, it can <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">push</a> (append) that message string into the array.</p>
+<p>Then whenever a user (new socket) connects to the server, (on <code>connection</code>) the server could iterate over all the messages in the array and <code>emit</code> them to that new client/socket.</p>
+<h2 id="4-deploy">4. Deploy</h2>
+<p>You can use another free technology called Heroku to make your app available on the Internet for anyone to use. There&apos;s a tutorial that will walk you through the process here: <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction" target="_blank">https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction</a>.</p>
+
                                 
                                 </section>
                             
@@ -400,7 +401,7 @@
 
             
                 
-                <a href="../part2/socket.io.html" class="navigation navigation-prev " aria-label="Previous page: Socket IO">
+                <a href="../part2/socket.io.html" class="navigation navigation-prev " aria-label="Previous page: Socket.IO">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -416,7 +417,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Part III - Enhancements (Stretch)","level":"1.5","depth":1,"next":{"title":"Final Thoughts","level":"1.6","depth":1,"path":"content/final/README.md","ref":"content/final/README.md","articles":[]},"previous":{"title":"Socket IO","level":"1.4.4","depth":2,"path":"content/part2/socket.io.md","ref":"content/part2/socket.io.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part3/README.md","mtime":"2016-10-14T04:17:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-30T23:48:29.019Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Part III - Enhancements (Stretch)","level":"1.5","depth":1,"next":{"title":"Final Thoughts","level":"1.6","depth":1,"path":"content/final/README.md","ref":"content/final/README.md","articles":[]},"previous":{"title":"Socket.IO","level":"1.4.4","depth":2,"path":"content/part2/socket.io.md","ref":"content/part2/socket.io.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part3/README.md","mtime":"2017-03-30T17:08:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T17:49:42.243Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

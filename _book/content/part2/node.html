@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Node · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Node · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
             
-                <a href="../setup/github.html">
+                <a href="../setup/cloud9.html">
             
                     
-                    Github
+                    Brackets
             
                 </a>
             
@@ -142,12 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/nodejs.html">
             
-                <a href="../setup/cloud9.html">
+                <a href="../setup/nodejs.html">
             
                     
-                    Cloud9
+                    Node.js
             
                 </a>
             
@@ -187,20 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../part1/dev-tools.html">
-            
-                <a href="../part1/dev-tools.html">
-            
-                    
-                    Dev Tools
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="../part1/css.html">
+        <li class="chapter " data-level="1.3.2" data-path="../part1/css.html">
             
                 <a href="../part1/css.html">
             
@@ -213,12 +200,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../part1/final-css.html">
+        <li class="chapter " data-level="1.3.3" data-path="../part1/final-css.html">
             
                 <a href="../part1/final-css.html">
             
                     
-                    CSS (Solution!)
+                    CSS (Example)
             
                 </a>
             
@@ -289,7 +276,7 @@
                 <a href="socket.io.html">
             
                     
-                    Socket IO
+                    Socket.IO
             
                 </a>
             
@@ -373,10 +360,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="node-javascript-on-the-server">Node (JavaScript on the server)!</h1><p>So far we&apos;ve been building a web site with some static content and a bit of client-side interactivity.</p><p>It&apos;s time to take it up a notch and graduate to &quot;Web application&quot; status. Server-side app logic is what separates a site from an app.</p><h2 id="step-1">Step 1</h2><p>First, stop the server if it&apos;s running.</p><p><img alt="screenshot" src="http://d.pr/i/18zDg/2QUFHpkd+"></p><p>Let&apos;s then move all the &quot;client&quot; side files into their own folder called <code>client</code>.</p><p><img alt="screenshot" src="http://d.pr/i/1jj5s/2uE8HilK+"></p><h2 id="step-2">Step 2</h2><p>Now let&apos;s add another JavaScript file to be run on the server side which will power the logic for our chat application. Call it <code>server.js</code> and put it at the top level (at the same level as the <code>client</code> folder.)</p><p>In it, put this one test line of code, to print a message to the screen so we know that it is working.</p><pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello from our node script!&apos;</span>);</code></pre>
-<p><img alt="screenshot" src="http://d.pr/i/1j4Jg/2F7WTbb6+"></p><h2 id="step-3">Step 3</h2><p>Let&apos;s run it. We&apos;ll use the Node runner given to us by Cloud9 to make life easy here.</p><p><img alt="screenshot" src="http://d.pr/i/17Sx1/58mf36Nc+"></p><p>A new tab will open in the terminal panel at the bottom, which will say something very similar to:</p><pre><code class="lang-bash">Debugger listening on port 15454
-hello from our node script!</code></pre>
-<p>And there&apos;s our message, nice!</p><p>You can click the red Stop button at this point.</p>
+                                <h1 id="node-javascript-on-the-server">Node (JavaScript on the server)!</h1>
+<p>So far we&apos;ve been building a website with some static content and a bit of client-side interactivity.</p>
+<p>It&apos;s time to take it up a notch and graduate to &quot;Web application&quot; status. Server-side app logic is what separates a site from an app.</p>
+<h2 id="step-1">Step 1</h2>
+<p>Move all the &quot;client&quot; side files into their own folder called <strong>client</strong>.</p>
+<p><img src="../../assets/client-folder.png" alt="Client folder"></p>
+<h2 id="step-2">Step 2</h2>
+<p>Now let&apos;s add another JavaScript file to be run on the server side which will power the logic for our chat application. Call it <strong>server.js</strong> and put it at the top level (at the same level as the <strong>client</strong> folder.)</p>
+<p>In it, put this one test line of code, to print a message to the screen so we know that it is working.</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello from our node script!&apos;</span>);
+</code></pre>
+<p><img src="../../assets/server-test.png" alt="Server test"></p>
+<h2 id="step-3">Step 3</h2>
+<p>Let&apos;s run it. Open up the <strong>Terminal</strong> app on MacOS or <strong>cmd.exe</strong> on Windows to get to a command prompt.</p>
+<p>Next you&apos;ll have to change the working directory to the one where your project files are. In the example below I used the commands:</p>
+<pre><code>cd Desktop
+cd Lighthouse\ Labs
+</code></pre><p>Then to run the file I did the command:</p>
+<pre><code>node server.js
+</code></pre><p>The output should look like this.</p>
+<p><img src="../../assets/terminal-test.png" alt="Terminal test"></p>
+<p>And there&apos;s our message, nice!</p>
+
                                 
                                 </section>
                             
@@ -419,7 +425,7 @@ hello from our node script!</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Node","level":"1.4.2","depth":2,"next":{"title":"Express","level":"1.4.3","depth":2,"path":"content/part2/express.md","ref":"content/part2/express.md","articles":[]},"previous":{"title":"Client Side","level":"1.4.1","depth":2,"path":"content/part2/client-js.md","ref":"content/part2/client-js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/node.md","mtime":"2016-10-14T14:19:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-30T23:48:29.019Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Node","level":"1.4.2","depth":2,"next":{"title":"Express","level":"1.4.3","depth":2,"path":"content/part2/express.md","ref":"content/part2/express.md","articles":[]},"previous":{"title":"Client Side","level":"1.4.1","depth":2,"path":"content/part2/client-js.md","ref":"content/part2/client-js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/node.md","mtime":"2017-03-30T17:08:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T17:49:42.243Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

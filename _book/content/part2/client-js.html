@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Client Side · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Client Side · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
             
-                <a href="../setup/github.html">
+                <a href="../setup/cloud9.html">
             
                     
-                    Github
+                    Brackets
             
                 </a>
             
@@ -142,12 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/nodejs.html">
             
-                <a href="../setup/cloud9.html">
+                <a href="../setup/nodejs.html">
             
                     
-                    Cloud9
+                    Node.js
             
                 </a>
             
@@ -187,20 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../part1/dev-tools.html">
-            
-                <a href="../part1/dev-tools.html">
-            
-                    
-                    Dev Tools
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="../part1/css.html">
+        <li class="chapter " data-level="1.3.2" data-path="../part1/css.html">
             
                 <a href="../part1/css.html">
             
@@ -213,12 +200,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../part1/final-css.html">
+        <li class="chapter " data-level="1.3.3" data-path="../part1/final-css.html">
             
                 <a href="../part1/final-css.html">
             
                     
-                    CSS (Solution!)
+                    CSS (Example)
             
                 </a>
             
@@ -289,7 +276,7 @@
                 <a href="socket.io.html">
             
                     
-                    Socket IO
+                    Socket.IO
             
                 </a>
             
@@ -373,15 +360,50 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="javascript-in-the-browser">JavaScript in the Browser</h1><p>Let&apos;s add some behavior to your web page so it works. That&apos;s where JavaScript (JS) comes in.</p><h2 id="step-1">Step 1</h2><p>Much like with the CSS, we need to link our new <code>.js</code> code with our web page, our <code>.html</code> content file.</p><p>Add the following tags to the bottom of the HTML file.</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://code.jquery.com/jquery-3.1.1.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
-<p>Now whenever you refresh/load the web page, it will reference two separate JS files for the browser to download (at the end), one of which is external (3rd party) to our application. This 3rd party library called jQuery is there to make life easier. We don&apos;t <em>need</em> it, but with it we can write less code. This is why most websites use jQuery or other libraries like it.</p><h2 id="step-2">Step 2</h2><p>The second file <code>app.js</code> needs to exist in our workspace, so let&apos;s create it just like you created <code>style.css</code> earlier.</p><p>It will be empty at first, but let&apos;s add the following code into it.</p><pre><code class="lang-js">alert(<span class="hljs-string">&apos;hello from the JS file&apos;</span>);</code></pre>
-<p>Save the file and refresh the (probably already running) HTML file in your other browser tab. Upon page load, you should see an alert pop up that says your message.</p><p><img alt="screenshot" src="http://d.pr/i/1iOIM/1t9ilpa9+"></p><p><code>alert</code> is a built in function that all browsers support, even though they may look slightly different on each browser. I&apos;m guessing it&apos;s not your first time seeing one, so now you know how they happen.</p><p>Any time you call a function in JS you have to use <code>(parentheses)</code> after it, and within the brackets you put in data that you want to give the function. Programming functions are much like math functions. They take in values and can do some crunching and give you back a computed value, or in this case, give you back some behavior like popup that message you passed into it.</p><p>Every single pre-defined JS function has documentation, so we can look up details about how they work. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">Case in point</a>.</p><p>Very soon, we&apos;ll create our own function while using other functions. It&apos;s going to get a bit more real, so hold on to your suspenders!</p><h2 id="step-3">Step 3</h2><p>Remove the <code>alert</code> code and let&apos;s get down to business. We want to make it so when our <code>&lt;form&gt;</code> is submitted (via enter key or by clicking the send button) we read the text content of the input field (<code>id</code>&apos;d as <code>m</code> in the HTML file) and do something with it. For now let&apos;s just <code>alert</code> it.</p><pre><code class="lang-js">$(<span class="hljs-string">&apos;form&apos;</span>).submit(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">var</span> text = $(<span class="hljs-string">&apos;#m&apos;</span>).val();
+                                <h1 id="javascript-in-the-browser">JavaScript in the Browser</h1>
+<p>Let&apos;s add some behaviour to your webpage so it actually does something useful. That&apos;s where JavaScript comes in.</p>
+<h2 id="step-1">Step 1</h2>
+<p>Much like with the CSS, we need to link our new <strong>.js</strong> code with our web page, our <strong>.html</strong> file.</p>
+<p>Add the following tags to the <em>bottom</em> of the HTML file.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://code.jquery.com/jquery-3.1.1.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;app.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>Now whenever you refresh/load the web page, it will reference two separate JS files for the browser to download (at the end), one of which is external (3rd party) to our application. This 3rd party library called jQuery is there to make life easier. We don&apos;t <strong>need</strong> it, but with it we can write less code. This is why most websites use jQuery or other libraries like it.</p>
+<h2 id="step-2">Step 2</h2>
+<p>The second file <strong>app.js</strong> needs to exist in our workspace, so let&apos;s create it just like you created <strong>style.css</strong> earlier.</p>
+<p>It will be empty at first, but let&apos;s add the following code into it.</p>
+<pre><code class="lang-javascript">alert(<span class="hljs-string">&apos;hello from the JS file&apos;</span>);
+</code></pre>
+<p>Save the file and refresh the HTML file in your browser. When the page loads you should see an alert pop up that says your message.</p>
+<p><img src="../../assets/alert.png" alt="Alert"></p>
+<p><code>alert</code> is a built in function that all browsers support, even though they may look slightly different on each browser. I&apos;m guessing it&apos;s not your first time seeing one, so now you know how they happen.</p>
+<p>Any time you call a function in JS you have to use parentheses <code>()</code> after it, and within the brackets you put in data that you want to give the function. Programming functions are much like math functions. They take in values and can do some crunching and give you back a computed value, or in this case, give you back some behaviour like popup that message you passed into it.</p>
+<p>Every single predefined JavaScript function has documentation, so we can look up details about how they work. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">Case in point</a>.</p>
+<p>Very soon, we&apos;ll create our own function while using other functions. It&apos;s going to get a bit more real, so hold on to your suspenders!</p>
+<h2 id="step-3">Step 3</h2>
+<p><strong>Remove the <code>alert</code> code</strong> and let&apos;s get down to business. We want to make it so when our <code>&lt;form&gt;</code> is submitted (via enter key or by clicking the send button) we read the text content of the input field (with <code>id=&quot;message&quot;</code> in the HTML file) and do something with it. For now let&apos;s just <code>alert</code> it.</p>
+<pre><code class="lang-javascript">$(<span class="hljs-string">&apos;form&apos;</span>).submit(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> text = $(<span class="hljs-string">&apos;#message&apos;</span>).val();
   alert(text);
   <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-});</code></pre>
-<p>Remember, type that out yourself. Don&apos;t copy paste it. Assuming you started and closed all the brackets, quotes, and semicolons correctly, it should add some interesting behavior to the page.</p><p>Save the file, and refresh the HTML page. Put some text into the second field and hit Enter or click Send. You should see it echoed back to you in an alert message. If not, review or otherwise seek help.</p><p><img alt="example" src="http://d.pr/i/1dJ6W/mKRvFgKR+"></p><h3 id="explanation">Explanation</h3><p>The code above isn&apos;t doing too much, but it does need to be reviewed before we move on.</p><p>First, we use <code>jQuery</code> using the <code>$</code> function, telling it that we want to target all <code>form</code> elements on the page. There is only one form element on the page and it is the one at the bottom which contains both input fields and the button.</p><p>Note how we don&apos;t use the <code>&lt;</code>angle<code>&gt;</code> brackets when targeting elements here, just like with CSS. Angle brackets are solely used to <em>define</em> tags in the HTML page.</p><p>We then call/invoke another function called <code>submit</code> on that returned form element, saying that we want to be notified anytime that form is submitted.</p><p>In order to be notified any time this happens, we pass in our own custom function into the <code>submit</code> function. That&apos;s right, <code>submit</code> is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the <code>(</code>parentheses<code>)</code>. They&apos;re not on the same line, but they are there.</p><p>This part may be a bit confusing but perhaps this annotated code can help you see it better.</p><p><img alt="screenshot" src="http://d.pr/i/1eAYn/2mERR8ql+"></p><p>Otherwise, call over a mentor for explanation.</p><p>Inside our function, the rest of the code is indented so that we know that it is within that function, just like we nest HTML tags with indentation. Make sure your code is indented correctly because improper indentation is a big source of confusion.</p><p>This inside code is capturing the text value of the HTML element <code>id</code>&apos;d as <code>m</code> and then passing it to <code>alert</code> so that we can see it.</p><p>Lastly, the <code>return false</code> is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything). This is common practice when adding custom behavior to forms like we are doing here.</p>
+});
+</code></pre>
+<p>Remember, type that out yourself. Don&apos;t copy paste it. Assuming you started and closed all the brackets, quotes, and semicolons correctly, it should add some interesting behaviour to the page. </p>
+<p>Save the file, and refresh the HTML page. Put some text into the second field and hit Enter or click Send. You should see it echoed back to you in an alert message. If not, review or otherwise seek help.</p>
+<p><img src="../../assets/working-alert.png" alt="Working alert"></p>
+<h3 id="explanation">Explanation</h3>
+<p>The code above isn&apos;t doing too much, but it does need to be reviewed before we move on.</p>
+<p>First, we use <strong>jQuery</strong> using the <code>$</code> function, telling it that we want to target all <code>form</code> elements on the page. There is only one form element on the page and it is the one at the bottom which contains both input fields and the button.</p>
+<p>Note how we don&apos;t use the <code>&lt;</code>angle<code>&gt;</code> brackets when targeting elements here, just like with CSS. Angle brackets are solely used to <em>define</em> tags in the HTML page.</p>
+<p>We then call/invoke another function called <code>submit</code> on that returned form element, saying that we want to be notified anytime that form is submitted.</p>
+<p>In order to be notified any time this happens, we pass in our own custom function into the <code>submit</code> function. That&apos;s right, <code>submit</code> is a function that accepts a function. Read that again. Look at the code. Remember that we pass in data into functions within the parentheses <code>()</code>. They&apos;re not on the same line, but they are there.</p>
+<p>This part may be a bit confusing but perhaps this annotated code can help you see it better.</p>
+<p><img src="../../assets/annotated-alert.png" alt="Annotated code"></p>
+<p>Otherwise, call over a mentor for explanation.</p>
+<p>Inside our function, the rest of the code is indented so that we know that it is within that function, just like we nest HTML tags with indentation. Make sure your code is indented correctly because improper indentation is a big source of confusion.</p>
+<p>This inside code is capturing the text value of the HTML element with the ID<code>message</code> and then passing it to <code>alert</code> so that we can see it.</p>
+<p>Lastly, the <code>return false</code> is there to tell the browser to cancel the original form submission logic (which is to attempt sending the form to the server, with loading spinner and everything.) This is common practice when adding custom behaviour to forms like we are doing here.</p>
+
                                 
                                 </section>
                             
@@ -424,7 +446,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Client Side","level":"1.4.1","depth":2,"next":{"title":"Node","level":"1.4.2","depth":2,"path":"content/part2/node.md","ref":"content/part2/node.md","articles":[]},"previous":{"title":"Part II - JavaScript","level":"1.4","depth":1,"path":"content/part2/README.md","ref":"content/part2/README.md","articles":[{"title":"Client Side","level":"1.4.1","depth":2,"path":"content/part2/client-js.md","ref":"content/part2/client-js.md","articles":[]},{"title":"Node","level":"1.4.2","depth":2,"path":"content/part2/node.md","ref":"content/part2/node.md","articles":[]},{"title":"Express","level":"1.4.3","depth":2,"path":"content/part2/express.md","ref":"content/part2/express.md","articles":[]},{"title":"Socket IO","level":"1.4.4","depth":2,"path":"content/part2/socket.io.md","ref":"content/part2/socket.io.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/client-js.md","mtime":"2016-10-15T21:48:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-30T23:48:29.019Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Client Side","level":"1.4.1","depth":2,"next":{"title":"Node","level":"1.4.2","depth":2,"path":"content/part2/node.md","ref":"content/part2/node.md","articles":[]},"previous":{"title":"Part II - JavaScript","level":"1.4","depth":1,"path":"content/part2/README.md","ref":"content/part2/README.md","articles":[{"title":"Client Side","level":"1.4.1","depth":2,"path":"content/part2/client-js.md","ref":"content/part2/client-js.md","articles":[]},{"title":"Node","level":"1.4.2","depth":2,"path":"content/part2/node.md","ref":"content/part2/node.md","articles":[]},{"title":"Express","level":"1.4.3","depth":2,"path":"content/part2/express.md","ref":"content/part2/express.md","articles":[]},{"title":"Socket.IO","level":"1.4.4","depth":2,"path":"content/part2/socket.io.md","ref":"content/part2/socket.io.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/client-js.md","mtime":"2017-03-30T17:08:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T17:49:42.243Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

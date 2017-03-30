@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Express · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Express · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../setup/github.html">
+        <li class="chapter " data-level="1.2.2" data-path="../setup/cloud9.html">
             
-                <a href="../setup/github.html">
+                <a href="../setup/cloud9.html">
             
                     
-                    Github
+                    Brackets
             
                 </a>
             
@@ -142,12 +142,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../setup/cloud9.html">
+        <li class="chapter " data-level="1.2.3" data-path="../setup/nodejs.html">
             
-                <a href="../setup/cloud9.html">
+                <a href="../setup/nodejs.html">
             
                     
-                    Cloud9
+                    Node.js
             
                 </a>
             
@@ -187,20 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../part1/dev-tools.html">
-            
-                <a href="../part1/dev-tools.html">
-            
-                    
-                    Dev Tools
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="../part1/css.html">
+        <li class="chapter " data-level="1.3.2" data-path="../part1/css.html">
             
                 <a href="../part1/css.html">
             
@@ -213,12 +200,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../part1/final-css.html">
+        <li class="chapter " data-level="1.3.3" data-path="../part1/final-css.html">
             
                 <a href="../part1/final-css.html">
             
                     
-                    CSS (Solution!)
+                    CSS (Example)
             
                 </a>
             
@@ -289,7 +276,7 @@
                 <a href="socket.io.html">
             
                     
-                    Socket IO
+                    Socket.IO
             
                 </a>
             
@@ -373,7 +360,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="express-for-our-web-server">Express for our web server</h1><p>So far we&apos;ve created a Node script that prints something out to the terminal, which is great. Instead of doing that though, we need it to do something real.</p><p>In our case, we&apos;re building a web server, more specifically a <em>chat &apos;server&apos;</em>. So we need to listen for incoming HTTP requests and then send down the HTML, CSS and JS that we wrote earlier for our <em>chat &apos;client&apos;</em>.</p><p>While Node comes with basic HTTP handling support, a very (probably the most) popular 3rd party library (called &quot;modules&quot; in the Node community) named &apos;Express&apos; is used by most developers writing web servers in Node. We shall use it too!</p><h2 id="step-1">Step 1</h2><p>Let&apos;s install and save the Express library into our project by running the command.</p><p><code>npm install express</code></p><p>This downloads some code using the Node Package Manager (NPM) that we can use to make our lives easier.</p><p><img alt="screenshot" src="http://d.pr/i/10kgL/2BlmzYbb+"></p><p>Now we can start using it. Type out the following JavaScript code into the <code>server.js</code> file.</p><pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+                                <h1 id="express-for-our-web-server">Express for our web server</h1>
+<p>So far we&apos;ve created a Node script that prints something out to the terminal, which is great. Instead of doing that though, we need it to do something real.</p>
+<p>In our case, we&apos;re building a web server, more specifically a <em>chat &apos;server&apos;</em>. So we need to listen for incoming HTTP requests and then send down the HTML, CSS and JavaScript that we wrote earlier for our chat client.</p>
+<p>While Node comes with basic HTTP handling support, a very (probably the most) popular 3rd party library (called &quot;modules&quot; in the Node community) named <strong>Express</strong> is used by most developers writing Web servers in Node. We shall use it too!</p>
+<h2 id="step-1">Step 1</h2>
+<p>Let&apos;s install and save the Express library into our project by running this command from the command line that we have open.</p>
+<pre><code>npm install express
+</code></pre><p>This downloads some code using the Node Package Manager (NPM) that we can use to make our lives easier.</p>
+<p><img src="../../assets/install-express.png" alt="Install Express"></p>
+<p>Now we can start using it. Type out the following JavaScript code into the <strong>server.js</strong> file.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">var</span> app = express();
 
 <span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
@@ -381,11 +378,19 @@
 
 app.use(express.static(<span class="hljs-string">&apos;client&apos;</span>));
 
-server.listen(process.env.PORT, process.env.IP, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">var</span> addr = server.address();
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Chat server running at&quot;</span>, addr.address + <span class="hljs-string">&quot;:&quot;</span> + addr.port);
-});</code></pre>
-<h3 id="explanation">Explanation</h3><p>So a bunch of new code and syntax was just introduced there. Let&apos;s attempt to break it down.</p><p>The first few lines are just loading external modules. We then tell the Express app to server all static content from the <code>client</code> folder.</p><p>When all the setup work is done, we then tell the server to listen in on a certain port and IP address.</p><p>So for now it&apos;s a simple web server serving only static (HTML, CSS and JS) files to any HTTP/web traffic coming its way.</p><p>Let&apos;s try it out by running it.</p><p><img alt="screenshot" src="http://d.pr/i/1bz8V/4HQ3G3lz+"></p><p>Now visit the URL mentioned in the terminal output in another browser tab. It will bring up the chat app page just like before, with no new functionality. The send button should be working as before, too!</p><p><img alt="screenshot" src="http://d.pr/i/23w5/1oxxdqvJ+"></p>
+server.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Chat server running&apos;</span>);
+});
+</code></pre>
+<h3 id="explanation">Explanation</h3>
+<p>So a bunch of new code and syntax was just introduced there. Let&apos;s attempt to break it down.</p>
+<p>The first few lines are just loading external modules. We then tell the Express app to server all static content from the <strong>client</strong> folder.</p>
+<p>When all the setup work is done, we then tell the server to listen in on a certain port (in this case 8080.)</p>
+<p>So for now it&apos;s a simple web server serving only static (HTML, CSS and JavaScript) files to any HTTP/Web traffic coming its way. </p>
+<p>Let&apos;s try it out by running it using the same command as before.</p>
+<pre><code>node server.js
+</code></pre><p>Now visit <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> in your Web browser. It will bring up the chat app page just like before, with no new functionality. The send button should be working as before, too!</p>
+
                                 
                                 </section>
                             
@@ -417,7 +422,7 @@ server.listen(process.env.PORT, process.env.IP, <span class="hljs-function"><spa
                 </a>
                 
                 
-                <a href="socket.io.html" class="navigation navigation-next " aria-label="Next page: Socket IO">
+                <a href="socket.io.html" class="navigation navigation-next " aria-label="Next page: Socket.IO">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -428,7 +433,7 @@ server.listen(process.env.PORT, process.env.IP, <span class="hljs-function"><spa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Express","level":"1.4.3","depth":2,"next":{"title":"Socket IO","level":"1.4.4","depth":2,"path":"content/part2/socket.io.md","ref":"content/part2/socket.io.md","articles":[]},"previous":{"title":"Node","level":"1.4.2","depth":2,"path":"content/part2/node.md","ref":"content/part2/node.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/express.md","mtime":"2016-10-14T14:21:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-30T23:48:29.019Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Express","level":"1.4.3","depth":2,"next":{"title":"Socket.IO","level":"1.4.4","depth":2,"path":"content/part2/socket.io.md","ref":"content/part2/socket.io.md","articles":[]},"previous":{"title":"Node","level":"1.4.2","depth":2,"path":"content/part2/node.md","ref":"content/part2/node.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/part2/express.md","mtime":"2017-03-30T17:08:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T17:49:42.243Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
