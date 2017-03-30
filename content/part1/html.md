@@ -1,101 +1,96 @@
 # HTML
 
-HTML is short for Hotmail. No, just kidding. It's actually short for Hyper Text Markup Language. It's a fancy way of saying that we use "markup" text/english to annotate and describe the structure of our web page content. It's the bread and butter of every web site you've every visited.
+HTML is the most fundamental language used on the Web. With it, we add information into documents that explain how they are linked together &mdash; that's how the Web works!
 
-So let's use it to build our app.
+Now let's use it to build our app.
 
 ## Step 1
 
-Create an new file in your project called `index.html` by right clicking the top level folder in the tree view on the left hand side.
+Create a folder on your computer to put the files for this project. A good name for the folder might be **Lighthouse Labs**. Then go to **File &gt; Open Folder...** and select your new folder. 
 
-![example](http://d.pr/i/WClH/2cnEeYM7+)
+![Open Folder](/assets/open-folder.png)
 
-Open the file and add the following html code into it:
+You should now see an empty workspace ready for us to create our project in.
+
+Create an new file in your project called **index.html** by right clicking the grey area on the left hand side.
+
+![New File](/assets/new-file.png)
+
+![index.html](/assets/index.html.png)
+
+Open the file and add the following html code into it.
 
 ```html
-<!doctype html>
-<html>
-  <head>
-    <title>CUEBC Chat App!</title>
-  </head>
-  <body>
-    Hello world!
-  </body>
-</html>
+<h1>hello, world</h1>
 ```
 
-Save the file using <kbd>cmd</kbd> + <kbd>s</kbd> just like you would in any other text editor.
+It should look like this.
 
-With this file selected on the left side, click the green "Run" button. You'll see a terminal output like the one shown below. Copy the highlighted URL and paste it into a new browser tab.
+![hello, world](/assets/hello-world.png)
 
-![example](http://d.pr/i/6Ffy/282MJmg1+)
+Save the file and then navigate to your project folder and choose to open the **index.html** file in your Web browser. You'll get something like this.
 
-Boom, you just built (your first?) HTML page!
+![Hello, Chrome](/assets/hello-browser.png)
 
-Notice the URL, you can even have your team member / pair programmer put that URL in their browser and see the same results. It's online too?! Thank you Cloud9!
+And that's it &mdash; you just built a Web page!
 
 ## Step 2
 
-Let's build out the "markup" (structure) of our web page so it looks more like our goal, which is something like this:
+Let's build out the "markup" (structure) of our web page so it looks more like our goal, which is something like this.
 
-![example](http://d.pr/i/1k0TK/33fupKLm+)
+![TODO]()
 
-Here's a general english description of the contents, do you agree?
+Here's a description of the what it contains.
 
-1. We have a main area (the main white rounded box) 
-2. Inside that there is a message box
-3. Inside the message box is a vertical list of messages with zebra-striping (alternating background colours)
-4. Below that is a form containing two input fields and a Send button. The first input field is for two letter initials of who is sending the message and the second is the message itself.
+1. A main area
+2. Inside that there is the message history box
+3. Inside the message history box is a list of messages
+4. Below that is a form containing two input fields and a "Send" button. The first input field is for the initials of the person sending the message and the second is the message itself.
 
-The initial HTML for this can be something like the following. Type out this code (please type it out, no copy / paste!) in between the `<body>` and `</body>` lines:
+The initial HTML for this can be something like the following. Replace the content of **index.html** with this code. Please type it out instead of using copy and paste.
 
 ```html
-<main role="main">
-  <ul id="messages">
-  </ul>
-
+<main>
+  <ol id="history">
+  </ol>
   <form>
-    <input id="you" type="text"></input>
-    <input id="m" type="text"></input>
+    <input id="initials">
+    <input id="message">
     <button>Send</button>
   </form>
 </main>
 ```
 
-Note a few important aspects to HTML here:
+Note a few important properties of HTML here.
 
-### A. Tags define Elements
+### Tags define elements
 
-Tags that look like `<this>` have _meaning_. Other examples of tags would be `<p>` for a paragraph and `<h1>` for a "Heading 1".
+Tags look like `<this>` and they have *meaning*. Examples of tags are `<p>` which means "paragraph" and `<h1>` means a "first level heading".
 
-They are closed by an accompanying closing tag (eg: `</p>` or `</form>`).
+Most tags need an accompanying closing tag, for example `</p>` or `</h1>` after the text that goes inside the paragraph or heading.
 
-### B. Nesting
+### Nesting
 
-We indent our code when that content is inside (within) some content so that it's easy on the eyes and we can understand what is going on. 
+We indent our code when that content is *inside* a tag (between opening and closing tags) so that it's easy to understand what code is inside other code. 
 
-### C. IDs
+### IDs
 
-We `id` certain elements so that they can be quickly referenced later.
+We give `id`'s to certain elements so that they can be quickly referenced later.
 
-This `id="some-identifier"` key-value pair located _inside_ an HTML tag is called an HTML attribute. Elements can have zero or more attributes. Attributes are cool and come in handy later (you'll see).
+This `id="something"` key-value pair that is part of an HTML tag is called an HTML attribute. Elements can have zero or more attributes. Attributes are cool and come in handy later.
 
 ## Step 3
 
-Okay now let's save and refresh the other tab where the `index.html` file is open and being displayed to the user. It will hopefully look a lot like our final product...
+Let's save and refresh the browser tab where the **index.html** file is open. It will hopefully look a lot like our final product.
 
-![example](http://d.pr/i/ZHBD/LlgXPLjH+)
+![No style](/assets/no-styles.png)
 
-Damnit! Not even close... sigh.
+Hm...not quite. Why does it appear this way and not like the example? 
 
-What gives? Well the browser has a good understanding of the _content_ of our webpage, but no idea about how to display it. The presentation rules are defined using another language, called CSS.
-
-> Ugh, another language. Will it never end? 
-
-Chin up soldier, this is fun!
+We have provided the browser with a good understanding of the *structure* of our Web page, but not how to present it. The presentation rules are defined using another language called CSS.
 
 ## Questions?
 
 If you have any questions about the above, flag me or another mentor so that we can answer any questions you may have.
 
-Otherwise, move on to the next section.
+Otherwise, it's time to move on to the next section.
